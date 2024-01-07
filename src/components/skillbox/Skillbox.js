@@ -12,7 +12,7 @@ import { Tooltip } from '@mui/material'
 
 const Skillbox = () => {
   return (
-    <section id="contact" className="skills-section">
+    <section id="skills" className="skills-section">
       <div className="skills-section-header">
         <h2>
           My <span>skillbox</span>
@@ -58,16 +58,6 @@ const Skillbox = () => {
             <a href="#">
               <i className="fas fa-mobile-alt"></i>{' '}
               <FontAwesomeIcon icon={faReact} />
-            </a>
-          </button>
-        </Tooltip>
-
-        <Tooltip
-          title={<p style={{ bgcolor: '#999', fontSize: '2.5rem' }}>Java</p>}
-        >
-          <button className="skillbox-item item-2">
-            <a href="#" target="_blank">
-              <FontAwesomeIcon icon={faJava} />
             </a>
           </button>
         </Tooltip>
