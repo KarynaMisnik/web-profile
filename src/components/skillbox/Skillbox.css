@@ -12,6 +12,7 @@
 
 .skills-section-header > h2 {
   font-size: 6rem;
+  font-family: var(--font-primary);
 }
 
 .skills-section-header > h2 span {
