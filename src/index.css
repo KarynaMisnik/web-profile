@@ -1,4 +1,5 @@
 :root {
+  /* COLORS */
   --main-black: #080404;
   --main-blue: #45567d;
   --main-gray: #303841;
@@ -6,8 +7,18 @@
   --main-light-gray: #999;
   --white: #fdffff;
 
+  /* FONT FAMILY */
   --font-primary: 'Gentium Plus', serif;
   --font-emphasize: 'Inknut Antiqua', serif;
+
+  /* ALTERNITIVE FONT SIZE */
+  --h1: 4rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --h4: 1.125rem;
+  --h5: 1rem;
+  --h6: 0.875rem;
+  --p: 3rem;
 }
 
 * {

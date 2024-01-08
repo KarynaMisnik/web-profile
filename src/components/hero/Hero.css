@@ -8,6 +8,12 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  font-family: var(--font-primary);
+  padding-right: 0.5rem;
+}
+
+.about-container h1 {
+  font-size: var(--h1);
 }
 
 .about-container h1 span {
@@ -16,7 +22,7 @@
 }
 
 .about-container > p {
-  font-size: 3rem;
+  font-size: var(--p);
   font-weight: 200;
   color: var(--main-black);
 }
@@ -42,5 +48,12 @@
 @media only screen and (max-width: 768px) {
   .welcome-section {
     flex-direction: column;
+  }
+  .about-container {
+    padding: 1rem;
+    text-align: center;
+  }
+  .about-container > p {
+    font-size: 2rem;
   }
 }

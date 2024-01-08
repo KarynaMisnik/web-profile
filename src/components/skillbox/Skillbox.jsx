@@ -10,6 +10,15 @@ import { faCss3 } from '@fortawesome/free-brands-svg-icons'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { Tooltip } from '@mui/material'
 
+const skills = [
+  { name: 'Figma', icon: faFigma, className: 'item-1' },
+  { name: 'HTML5', icon: faHtml5, className: 'item-5' },
+  { name: 'CSS3', icon: faCss3, className: 'item-6' },
+  { name: 'ReactJS', icon: faReact, className: 'item-7' },
+  { name: 'PHP', icon: faPhp, className: 'item-3' },
+  { name: 'SQL', icon: faDatabase, className: 'item-4' },
+]
+
 const Skillbox = () => {
   return (
     <section id="skills" className="skills-section">
@@ -19,68 +28,22 @@ const Skillbox = () => {
         </h2>
       </div>
       <div className="skillbox">
-        <Tooltip
-          title={<p style={{ bgcolor: '#999', fontSize: '2.5rem' }}>Figma</p>}
-        >
-          <button className="skillbox-item item-1">
-            <a href="#" target="_blank">
-              <FontAwesomeIcon icon={faFigma} />
-            </a>
-          </button>
-        </Tooltip>
-
-        <Tooltip
-          title={<p style={{ bgcolor: '#999', fontSize: '2.5rem' }}>HTML5</p>}
-        >
-          <button className="skillbox-item item-5">
-            <a href="#">
-              <i className="fas fa-mobile-alt"></i>{' '}
-              <FontAwesomeIcon icon={faHtml5} />
-            </a>
-          </button>
-        </Tooltip>
-
-        <Tooltip
-          title={<p style={{ bgcolor: '#999', fontSize: '2.5rem' }}>CSS3</p>}
-        >
-          <button className="skillbox-item item-6">
-            <a href="#">
-              <i className="fas fa-mobile-alt"></i>{' '}
-              <FontAwesomeIcon icon={faCss3} />
-            </a>
-          </button>
-        </Tooltip>
-
-        <Tooltip
-          title={<p style={{ bgcolor: '#999', fontSize: '2.5rem' }}>React</p>}
-        >
-          <button className="skillbox-item item-7">
-            <a href="#">
-              <i className="fas fa-mobile-alt"></i>{' '}
-              <FontAwesomeIcon icon={faReact} />
-            </a>
-          </button>
-        </Tooltip>
-
-        <Tooltip
-          title={<p style={{ bgcolor: '#999', fontSize: '2.5rem' }}>PHP</p>}
-        >
-          <button className="skillbox-item item-3">
-            <a href="#" target="_blank">
-              <FontAwesomeIcon icon={faPhp} />
-            </a>
-          </button>
-        </Tooltip>
-
-        <Tooltip
-          title={<p style={{ bgcolor: '#999', fontSize: '2.5rem' }}>SQL</p>}
-        >
-          <button className="skillbox-item item-4">
-            <a href="#">
-              <FontAwesomeIcon icon={faDatabase} />
-            </a>
-          </button>
-        </Tooltip>
+        {skills.map((skill, index) => (
+          <Tooltip
+            key={index}
+            title={
+              <p style={{ bgcolor: '#999', fontSize: '2.5rem' }}>
+                {skill.name}
+              </p>
+            }
+          >
+            <button className={`skillbox-item ${skill.className}`}>
+              <a href="#" target="_blank">
+                <FontAwesomeIcon icon={skill.icon} />
+              </a>
+            </button>
+          </Tooltip>
+        ))}
       </div>
     </section>
   )

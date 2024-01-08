@@ -11,8 +11,6 @@ const Showcase = () => {
       <h2 className="projects-section-header">These are some of my projects</h2>
 
       <div className="projects-grid">
-        {/* start of card  */}
-        {/* start of game container */}
         <div className="game">
           <div className="front">
             <img src={Coder} alt="" />
@@ -129,8 +127,6 @@ const Showcase = () => {
           </div>
           <div className="card-bg"></div>
         </div>
-
-        {/* end of game container */}
       </div>
     </section>
   )
