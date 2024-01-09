@@ -32,7 +32,7 @@ const Skillbox = () => {
           <Tooltip
             key={index}
             title={
-              <p style={{ bgcolor: '#999', fontSize: '2.5rem' }}>
+              <p style={{ bgcolor: 'var(--bg-tooltip)', fontSize: '2rem' }}>
                 {skill.name}
               </p>
             }
