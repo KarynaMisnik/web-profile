@@ -1,17 +1,26 @@
+import MyImage from '../../assets/img/coder.png'
+
 const showcaseData = [
   {
-    name: 'Project 1',
-    img: './src/assets/img/coder.png',
+    name: 'Honey&Products',
+    img: MyImage,
     alt: 'descr of proj img',
     links: {
       github: 'https://github.com/example1',
       demo: 'https://example1.com',
     },
-    description: <p>This is a web site for project 1.</p>,
+    description: (
+      <p>
+        Web store of a small family business where you can find a good selection
+        of honey with amazing aroma and flavour. If you are a
+        beekeeper-enthusiast or just want to learn more about bees is possible
+        to visit a farm.
+      </p>
+    ),
   },
   {
-    name: 'Project 2',
-    img: './src/assets/img/coder.png',
+    name: 'TinyTechExhibits',
+    img: MyImage,
     alt: 'descr of proj img',
     links: {
       github: 'https://github.com/example1',
@@ -20,24 +29,14 @@ const showcaseData = [
     description: <p>This is a web site for project 2.</p>,
   },
   {
-    name: 'Project 3',
-    img: './src/assets/img/coder.png',
+    name: 'Finnish Emblem',
+    img: MyImage,
     alt: 'descr of proj img',
     links: {
       github: 'https://github.com/example1',
       demo: 'https://example1.com',
     },
-    description: <p>This is a web site for project 3.</p>,
-  },
-  {
-    name: 'Project 4',
-    img: './src/assets/img/coder.png',
-    alt: 'descr of proj img',
-    links: {
-      github: 'https://github.com/example1',
-      demo: 'https://example1.com',
-    },
-    description: <p>This is a web site for project 4.</p>,
+    description: <p>Lorem ipsum </p>,
   },
 ]
 

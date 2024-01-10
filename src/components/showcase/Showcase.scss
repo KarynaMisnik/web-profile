@@ -1,6 +1,7 @@
 .projects-section {
   text-align: center;
   padding: 6rem 2rem;
+
 }
 
 .projects-section-header {
@@ -8,6 +9,11 @@
   margin: 0 auto 2rem auto;
   border-bottom: 0.2rem solid var(--main-white);
   font-family: var(--font-primary);
+  span{
+    color: var(--main-red);
+    background-color: var(--main-black);
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 28.75em) {
@@ -26,46 +32,73 @@
 
 }
 
-.projects-grid .game{
+.projects-grid .card-wrapper{
 margin: 3em auto;
 }
 
-.project-links a{
-  color: var(--main-red);
-  font-size: 3.5rem;
-}
 
-@media (max-width: 30.625em) {
+
+@media (max-width: 18.625em) {
   .projects-section {
     padding: 4rem 1rem;
   }
 
   .projects-grid {
+    display: grid;
     grid-template-columns: 1fr;
+    justify-content: center;
+      align-items: center;
   }
 }
 
 /* card */
 
-.game {
+.card-wrapper {
   position: relative;
   width: 35rem;
-  margin: 5em 5em;
+  padding: 1rem;
 }
 .project-name-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   text-align: left;
   margin-top: 0.75em;
-  .project-links a{
-margin-right: 0.5em;
+  *{
+    padding: 0rem .5rem;
+  }
+.project-links a{
+  font-size: var(--project-icons);
+  color: var(--main-red);
+}
+  h2{
+    font-size: var(--h2);
+    
+    
   }
 }
+
+@media (max-width: 18.625em) {
+  .card-wrapper{
+    width: 30rem;
+  }
+    .project-name-container {
+      padding-bottom: 2rem;
+      .project-links a{
+        font-size: var(--h3);
+      }
+      h2{
+font-size: var(--h3);
+      }
+    }
+}
+
 
 .front img {
   border-radius: 8px;
   max-width: 100%;
 }
+
+
 
 .back {
  opacity: 0;
@@ -84,15 +117,15 @@ transform: translateY(5%);
   left: 0;
   right: 0;
   z-index: -1;
-  transform: scale(0.2, .9);
+  transform: scale(0.2, .3);
   border-radius: 8px;
   opacity: 0;
 }
 
-.game:hover {
+.card-wrapper:hover {
   color: var(--white);
   .front{
-    transform: translateY(-30%) scale(.8);
+    transform: translateY(-25%) scale(.8);
   }
 
   .back{
@@ -101,11 +134,17 @@ transform: translateY(0);
   transition: transform 250ms ease, opacity 150ms linear;
   }
 
+  .card-info {
+    font-size: var(--p);
+    padding: 0 1rem;
+    text-align: center;
+  }
+
   .card-bg {
     transition: 
     transform 250ms cubic-bezier(.21, 1.00, .81, 1.00),
     opacity 100ms linear;
     opacity: 1;
-    transform: scale(1.2, 1.2) translateY(5%);
+    transform: scale(1, 1) translateY(5%);
   }
 }

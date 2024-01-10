@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import './Showcase.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
@@ -8,18 +8,15 @@ import showcaseData from './showcaseData'
 const Showcase = () => {
   return (
     <section id="projects" className="projects-section">
-      <h2 className="projects-section-header">These are some of my projects</h2>
+      <h2 className="projects-section-header">
+        My showcase <span>hightlights</span>
+      </h2>
 
       <div className="projects-grid">
         {showcaseData.map((project, index) => (
-          <div key={index} className="game">
+          <div key={index} className="card-wrapper">
             <div className="front">
-              <img
-                src={project.img}
-                alt={project.alt}
-                onLoad={() => console.log('Image loaded successfully')}
-                onError={() => console.error('Error loading image')}
-              />
+              <img src={project.img} alt={project.alt} />
               <div className="project-name-container">
                 <h2>{project.name}</h2>
                 <div className="project-links">
