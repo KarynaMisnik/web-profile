@@ -5,9 +5,9 @@ import myImage from '../../assets/img/color-image.png'
 
 const Hero = () => {
   return (
-    <section id="welcome-section" class="welcome-section">
+    <section id="about" className="welcome-section">
       <div className="img-container">
-        <img src={myImage} />
+        <img src={myImage} alt="" />
       </div>
       <div className="about-container">
         <h1>

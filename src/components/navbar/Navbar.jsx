@@ -16,11 +16,17 @@ import Button from '@mui/material/Button'
 import styled from 'styled-components'
 
 const drawerWidth = 240
-const navItems = ['About', 'Stack', 'Work', 'Socials']
+const navItems = ['About', 'Stack', 'Work', 'Socials', 'CV']
 const CustomSpan = styled.span`
   color: var(--white);
-  margin-left: 2px;
 `
+
+const scrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId)
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' })
+  }
+}
 
 export default function DrawerAppBar() {
   const { window } = navItems
@@ -48,7 +54,9 @@ export default function DrawerAppBar() {
             <ListItemButton
               sx={{
                 textAlign: 'center',
+                cursor: 'pointer',
               }}
+              onClick={() => scrollToSection(item.toLowerCase())}
             >
               <ListItemText primary={item} />
             </ListItemButton>
@@ -91,7 +99,7 @@ export default function DrawerAppBar() {
               component="div"
               sx={{
                 display: { xs: 'flex' },
-                paddingLeft: '.5rem',
+
                 fontFamily: 'var(--font-emphasize)',
               }}
             >

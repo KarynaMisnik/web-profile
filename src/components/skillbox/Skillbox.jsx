@@ -1,14 +1,12 @@
 import React from 'react'
-import './Skillbox.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFigma } from '@fortawesome/free-brands-svg-icons'
-import { faJava } from '@fortawesome/free-brands-svg-icons'
 import { faPhp } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
 import { faCss3 } from '@fortawesome/free-brands-svg-icons'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
-import { Tooltip } from '@mui/material'
+import { Tooltip, Grid, styled } from '@mui/material'
 
 const skills = [
   { name: 'Figma', icon: faFigma, className: 'item-1' },
@@ -19,32 +17,81 @@ const skills = [
   { name: 'SQL', icon: faDatabase, className: 'item-4' },
 ]
 
+const SkillButton = styled('div')({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  margin: 'auto',
+  width: '65px',
+  height: '65px',
+  textAlign: 'center',
+  fontSize: '3rem',
+  color: 'var(--white)',
+  borderRadius: '8px',
+  backgroundColor: 'var(--main-black)',
+})
+
+const CustomHeader = styled('h2')({
+  fontFamily: 'var(--font-primary)',
+})
+
 const Skillbox = () => {
   return (
-    <section id="skills" className="skills-section">
+    <section
+      id="stack"
+      className="skills-section"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: 'center',
+        background: 'var(--main-red)',
+      }}
+    >
       <div className="skills-section-header">
-        <h2>
-          My <span>skillbox</span>
-        </h2>
+        <CustomHeader
+          variant="h2"
+          sx={{
+            color: 'var(--main-black)',
+            paddingTop: '1rem',
+            fontSize: {
+              xs: '4rem',
+              md: '6rem',
+            },
+          }}
+        >
+          My <span style={{ color: 'var(--white)' }}>skillbox</span>
+        </CustomHeader>
       </div>
-      <div className="skillbox">
+      <Grid
+        container
+        spacing={2}
+        sx={{ padding: '4rem 0' }}
+        className="skillbox"
+      >
         {skills.map((skill, index) => (
-          <Tooltip
-            key={index}
-            title={
-              <p style={{ bgcolor: 'var(--bg-tooltip)', fontSize: '2rem' }}>
-                {skill.name}
-              </p>
-            }
-          >
-            <button className={`skillbox-item ${skill.className}`}>
-              <a href="#" target="_blank">
-                <FontAwesomeIcon icon={skill.icon} />
-              </a>
-            </button>
-          </Tooltip>
+          <Grid item key={index} xs={4} sm={4} md={2} lg={2}>
+            <Tooltip
+              title={
+                <p
+                  style={{
+                    fontSize: '2rem',
+                  }}
+                >
+                  {skill.name}
+                </p>
+              }
+            >
+              <SkillButton className={`skillbox-item ${skill.className}`}>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={skill.icon} />
+                </a>
+              </SkillButton>
+            </Tooltip>
+          </Grid>
         ))}
-      </div>
+      </Grid>
     </section>
   )
 }
