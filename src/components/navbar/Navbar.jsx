@@ -122,6 +122,7 @@ export default function DrawerAppBar() {
             {navItems.map((item) => (
               <Button
                 key={item}
+                onClick={() => scrollToSection(item.toLowerCase())}
                 sx={{
                   color: 'var(--main-light-gray)',
                   fontFamily: 'var(--font-primary)',
