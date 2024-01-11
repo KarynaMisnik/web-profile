@@ -7,7 +7,7 @@ import showcaseData from './showcaseData'
 
 const Showcase = () => {
   return (
-    <section id="projects" className="projects-section">
+    <section id="work" className="projects-section">
       <h2 className="projects-section-header">
         My showcase <span>hightlights</span>
       </h2>
