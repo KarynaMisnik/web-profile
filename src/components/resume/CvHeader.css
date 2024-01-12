@@ -1,0 +1,36 @@
+.cv-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid var(--main-black);
+  padding: 1.5rem 0;
+}
+
+.cv-img-container {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.cv-img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid var(--main-black);
+}
+
+.cv-contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.cv-contact-icon {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 18.625em) {
+  .cv-contact-info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

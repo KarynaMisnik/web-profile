@@ -12,7 +12,8 @@ footer {
   display: flex;
 }
 
-.social-media-icons-container a {
+.social-media-icons-container a,
+.cv-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,11 +21,15 @@ footer {
   width: 65px;
   height: 65px;
   text-align: center;
-  margin-right: 1rem;
   font-size: 3rem;
   color: var(--white);
   border-radius: 8px;
   background-color: var(--main-black);
+  cursor: pointer;
+}
+
+.social-media-icons-container a {
+  margin-right: 1rem;
 }
 
 .footer-logo {

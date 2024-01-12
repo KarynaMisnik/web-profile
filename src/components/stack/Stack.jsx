@@ -35,7 +35,7 @@ const CustomHeader = styled('h2')({
   fontFamily: 'var(--font-primary)',
 })
 
-const Skillbox = () => {
+const Stack = () => {
   return (
     <section
       id="stack"
@@ -61,7 +61,7 @@ const Skillbox = () => {
             },
           }}
         >
-          My <span style={{ color: 'var(--white)' }}>skillbox</span>
+          My <span style={{ color: 'var(--white)' }}>stack</span>
         </CustomHeader>
       </div>
       <Grid
@@ -96,4 +96,4 @@ const Skillbox = () => {
   )
 }
 
-export default Skillbox
+export default Stack
