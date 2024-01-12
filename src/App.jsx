@@ -1,19 +1,16 @@
 import React from 'react'
 import './index.css'
-import Navbar from './components/navbar/Navbar'
-import Hero from './components/hero/Hero'
-import Showcase from './components/showcase/Showcase'
-import Footer from './components/footer/Footer'
-import Skillbox from './components/skillbox/Skillbox'
+import { Routes, Route } from 'react-router-dom'
+import Home from './components/home/Home'
+import CV from './components/resume/CV'
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Skillbox />
-      <Showcase />
-      <Footer />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/cv" element={<CV />} />
+      </Routes>
     </>
   )
 }

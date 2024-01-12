@@ -16,7 +16,7 @@ import Button from '@mui/material/Button'
 import styled from 'styled-components'
 
 const drawerWidth = 240
-const navItems = ['About', 'Stack', 'Work', 'Socials', 'CV']
+const navItems = ['About', 'Stack', 'Work', 'Socials']
 const CustomSpan = styled.span`
   color: var(--white);
 `
