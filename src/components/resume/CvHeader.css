@@ -1,3 +1,15 @@
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+p {
+  font-size: var(--p);
+}
+
 .cv-header {
   display: flex;
   flex-direction: column;
@@ -5,6 +17,19 @@
   align-items: center;
   border-bottom: 3px solid var(--main-black);
   padding: 1.5rem 0;
+}
+
+.cv-header > * {
+  padding-top: 0.5rem;
+}
+
+.cv-header h3 {
+  font-style: italic;
+}
+
+.cv-header p {
+  color: var(--cv-color-gray);
+  font-size: 1.5rem;
 }
 
 .cv-img-container {
@@ -26,11 +51,63 @@
 }
 
 .cv-contact-icon {
-  margin-right: 0.5rem;
+  margin-right: 0.3rem;
 }
 
 @media (max-width: 18.625em) {
   .cv-contact-info {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.left-part,
+.right-part {
+  padding: 1rem 0rem 1.5rem 1rem;
+}
+
+.right-part {
+  border-left: 3px solid var(--main-black);
+}
+
+.profile > *,
+.social > *,
+.education > *,
+.languages > *,
+.skills > *,
+.skills ul li,
+.work-experience > * {
+  padding-top: 1rem;
+}
+
+.education > div > h4 {
+  color: var(--cv-color-gray);
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links-container {
+  display: flex;
+  align-items: center;
+}
+
+.social-links-container > a {
+  font-size: 2rem;
+}
+
+.work-experience > div > ul > li {
+  font-size: var(--p);
+  list-style-type: disc;
+}
+
+.work-period {
+  border-bottom: 1px solid var(--main-black);
+  width: 35%;
+}
+
+.work-place {
+  padding-top: 0.5rem;
+  color: var(--cv-color-gray);
 }
