@@ -10,7 +10,7 @@ const CVDataWork = [
     ],
   },
   {
-    period: 'October - November 2020',
+    period: 'October-November 2020',
     company: 'Kielo International School',
     position: 'TEACHER ASSISTANT',
     responsibilities: [
@@ -18,7 +18,7 @@ const CVDataWork = [
     ],
   },
   {
-    period: 'November - July (2018-2019)',
+    period: 'November-July (2018-2019)',
     company: 'Panda English School',
     position: 'ENGLISH TEACHER',
     responsibilities: [
@@ -28,7 +28,7 @@ const CVDataWork = [
     ],
   },
   {
-    period: 'September - September (2017-2019)',
+    period: 'September-September (2017-2019)',
     company: 'Zaochnik.com',
     position: 'EDUCATIONAL WORKER',
     responsibilities: [
@@ -37,7 +37,7 @@ const CVDataWork = [
     ],
   },
   {
-    period: 'August - August (2015-2017)',
+    period: 'August-August (2015-2017)',
     company: 'Orsha State School no.2',
     position: 'ENGLISH TEACHER',
     responsibilities: [

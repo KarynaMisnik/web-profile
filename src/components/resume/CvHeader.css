@@ -10,6 +10,32 @@ p {
   font-size: var(--p);
 }
 
+.cv-btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cv-btn-group button {
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.button-home {
+  background: var(--main-blue);
+}
+
+.button-download {
+  background: var(--green);
+}
+
+.cv-wrapper {
+  padding-top: 5rem;
+}
+
 .cv-header {
   display: flex;
   flex-direction: column;
@@ -62,7 +88,11 @@ p {
 
 .left-part,
 .right-part {
-  padding: 1rem 0rem 1.5rem 1rem;
+  padding: 1rem 0rem 1.5rem 1.5rem;
+}
+
+.work-experience-container {
+  padding-left: 0.5rem;
 }
 
 .right-part {

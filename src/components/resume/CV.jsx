@@ -26,7 +26,12 @@ const CV = () => {
 
   return (
     <>
-      {/*<button onClick={goToHome}>Home</button>*/}
+      <div className="cv-btn-group">
+        <button className="button-home" onClick={goToHome}>
+          Home
+        </button>
+        <button className="button-download">Download PDF</button>
+      </div>
       <div className="cv-wrapper">
         <div className="cv-header">
           <div className="cv-img-container">
@@ -71,7 +76,7 @@ const CV = () => {
           <Grid item xs={12} sm={6} md={4}>
             <div className="left-part">
               {CvDataProfile.map((section, index) => (
-                <div key={index} className={section.class}>
+                <div key={index} className="profile-container">
                   {section.profile && (
                     <div className="profile">
                       <h3>PROFILE</h3>
@@ -129,7 +134,7 @@ const CV = () => {
               <div className="work-experience">
                 <h3>WORK EXPERIENCE</h3>
                 {CVDataWork.map((work, index) => (
-                  <div key={index}>
+                  <div key={index} className="work-experience-container">
                     <h4 className="work-period">{work.period}</h4>
                     <h4 className="work-place">{work.company}</h4>
                     <h3 className="work-title">{work.position}</h3>
