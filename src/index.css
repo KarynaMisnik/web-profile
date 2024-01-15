@@ -8,6 +8,7 @@
   --white: #fdffff;
   --bg-tooltip: #999;
   --cv-color-gray: #312f2f;
+  --green: #0bab43;
 
   /* FONT FAMILY */
   --font-primary: 'Gentium Plus', serif;
@@ -16,8 +17,8 @@
   /* ALTERNITIVE FONT SIZE */
   --h1: 4rem;
   --h2: 2.5rem;
-  --h3: 2rem;
-  --h4: 1.75rem;
+  --h3: 1.75rem;
+  --h4: 1.5rem;
   --p: 1.5rem;
   --project-icons: 3rem;
 }
