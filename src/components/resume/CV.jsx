@@ -6,6 +6,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 import Grid from '@mui/material/Grid'
+import myPDF from '../../assets/my_resume.pdf'
 
 import CVDataWork from './CvDataWork'
 import CvDataProfile from './CvDataProfile'
@@ -30,7 +31,11 @@ const CV = () => {
         <button className="button-home" onClick={goToHome}>
           Home
         </button>
-        <button className="button-download">Download PDF</button>
+        <button className="button-download">
+          <a href={myPDF} download="Karyna_Misnik_resume.pdf">
+            Download CV in PDF
+          </a>
+        </button>
       </div>
       <div className="cv-wrapper">
         <div className="cv-header">
@@ -101,8 +106,8 @@ const CV = () => {
                       <h3>EDUCATION</h3>
                       {section.education.map((edu, index) => (
                         <div key={index}>
-                          <h3>{edu.field}</h3>
-                          <h4>{edu.school}</h4>
+                          <h4>{edu.field}</h4>
+                          <h4 className="cv-education-school">{edu.school}</h4>
                           <p>{edu.degree}</p>
                         </div>
                       ))}
@@ -137,7 +142,7 @@ const CV = () => {
                   <div key={index} className="work-experience-container">
                     <h4 className="work-period">{work.period}</h4>
                     <h4 className="work-place">{work.company}</h4>
-                    <h3 className="work-title">{work.position}</h3>
+                    <h4 className="work-title">{work.position}</h4>
                     <ul>
                       {work.responsibilities.map((responsibility, i) => (
                         <li key={i}>{responsibility}</li>
