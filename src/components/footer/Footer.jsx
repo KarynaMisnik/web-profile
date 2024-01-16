@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
-import CV from '../resume/CV'
+/* FontAwesome Icons */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
+/* Mui Tooltip */
 import { Tooltip } from '@mui/material'
-import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (

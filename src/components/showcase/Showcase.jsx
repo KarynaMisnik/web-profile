@@ -1,8 +1,10 @@
 import * as React from 'react'
 import './Showcase.scss'
+/* FontAwesome Icons */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
+/* Data */
 import showcaseData from './showcaseData'
 
 const Showcase = () => {
