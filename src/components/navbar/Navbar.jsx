@@ -1,22 +1,32 @@
 import * as React from 'react'
+/* MUI List */
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemButton from '@mui/material/ListItemButton'
+import ListItemText from '@mui/material/ListItemText'
+
+/* MUI Icons */
+import IconButton from '@mui/material/IconButton'
+import MenuIcon from '@mui/icons-material/Menu'
+
+/* MUI Components */
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import CssBaseline from '@mui/material/CssBaseline'
 import Divider from '@mui/material/Divider'
 import Drawer from '@mui/material/Drawer'
-import IconButton from '@mui/material/IconButton'
-import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItem'
-import ListItemButton from '@mui/material/ListItemButton'
-import ListItemText from '@mui/material/ListItemText'
-import MenuIcon from '@mui/icons-material/Menu'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import styled from 'styled-components'
 
 const drawerWidth = 240
-const navItems = ['About', 'Stack', 'Work', 'Socials']
+const navItems = [
+  'About',
+  'Stack',
+  'Work',
+  'Socials',
+] /* Navbar categories array */
 const CustomSpan = styled.span`
   color: var(--white);
 `
@@ -36,14 +46,21 @@ export default function DrawerAppBar() {
     setMobileOpen((prevState) => !prevState)
   }
 
+  /* Menu for mobile screen size */
   const drawer = (
     <Box
       onClick={handleDrawerToggle}
-      sx={{ textAlign: 'center', color: 'var(--main-red)' }}
+      sx={{
+        textAlign: 'center',
+        color: 'var(--main-red)',
+      }}
     >
       <Typography
         variant="h4"
-        sx={{ my: 2, fontFamily: 'var(--font-primary)' }}
+        sx={{
+          my: 2,
+          fontFamily: 'var(--font-primary)',
+        }}
       >
         Profile
       </Typography>
@@ -55,6 +72,12 @@ export default function DrawerAppBar() {
               sx={{
                 textAlign: 'center',
                 cursor: 'pointer',
+                color: 'var(--main-black)',
+
+                '&:hover': {
+                  background: 'var(--main-red)',
+                  color: 'var(--white)',
+                },
               }}
               onClick={() => scrollToSection(item.toLowerCase())}
             >
@@ -79,6 +102,7 @@ export default function DrawerAppBar() {
           borderBottom: '3px solid rgba(84, 81, 81, 0.899)',
           boxShadow: '0 0 20px 6px var(--main-blue)',
           height: '7rem',
+          position: 'fixed',
         }}
       >
         <Toolbar>
@@ -99,7 +123,6 @@ export default function DrawerAppBar() {
               component="div"
               sx={{
                 display: { xs: 'flex' },
-
                 fontFamily: 'var(--font-emphasize)',
               }}
             >

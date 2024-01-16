@@ -1,4 +1,5 @@
 import React from 'react'
+/* MUI Icons */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFigma } from '@fortawesome/free-brands-svg-icons'
 import { faPhp } from '@fortawesome/free-brands-svg-icons'
@@ -6,15 +7,17 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
 import { faCss3 } from '@fortawesome/free-brands-svg-icons'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
+
+/* MUI Components */
 import { Tooltip, Grid, styled } from '@mui/material'
 
 const skills = [
-  { name: 'Figma', icon: faFigma, className: 'item-1' },
-  { name: 'HTML5', icon: faHtml5, className: 'item-5' },
-  { name: 'CSS3', icon: faCss3, className: 'item-6' },
-  { name: 'ReactJS', icon: faReact, className: 'item-7' },
-  { name: 'PHP', icon: faPhp, className: 'item-3' },
-  { name: 'SQL', icon: faDatabase, className: 'item-4' },
+  { name: 'Figma', icon: faFigma },
+  { name: 'HTML5', icon: faHtml5 },
+  { name: 'CSS3', icon: faCss3 },
+  { name: 'ReactJS', icon: faReact },
+  { name: 'PHP', icon: faPhp },
+  { name: 'SQL', icon: faDatabase },
 ]
 
 const SkillButton = styled('div')({
