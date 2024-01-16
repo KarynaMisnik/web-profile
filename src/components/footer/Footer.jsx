@@ -36,9 +36,9 @@ const Footer = () => {
           </Link>
         </Tooltip>
       </div>
-      <p className="footer-logo">
+      <h2 className="footer-logo">
         Karyna<span>.</span>
-      </p>
+      </h2>
     </footer>
   )
 }

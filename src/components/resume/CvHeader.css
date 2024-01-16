@@ -22,6 +22,7 @@ p {
   font-size: 2rem;
   font-weight: 700;
   color: var(--white);
+  cursor: pointer;
 }
 
 .button-home {
@@ -49,13 +50,13 @@ p {
   padding-top: 0.5rem;
 }
 
-.cv-header h3 {
+.cv-header h4 {
   font-style: italic;
 }
 
 .cv-header p {
   color: var(--cv-color-gray);
-  font-size: 1.5rem;
+  font-size: var(--p);
 }
 
 .cv-img-container {
@@ -109,7 +110,7 @@ p {
   padding-top: 1rem;
 }
 
-.education > div > h4 {
+.cv-education-school {
   color: var(--cv-color-gray);
 }
 
