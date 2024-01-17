@@ -45,7 +45,8 @@ margin: 3em auto;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-      align-items: center;
+    align-items: center;
+    grid-gap: 2rem;
   }
 }
 
@@ -59,7 +60,7 @@ margin: 3em auto;
   display: flex;
   justify-content: flex-start;
   text-align: left;
-  margin-top: 0.75em;
+  margin-top: 0.8rem;
   *{
     padding: 0rem .5rem;
   }
@@ -98,7 +99,7 @@ font-size: var(--h3);
  bottom:0;
  left: 0;
  right: 0;
- transform: translateY(5%);
+ transform: translateY(0);
 }
 
 .card-bg {
@@ -117,7 +118,7 @@ font-size: var(--h3);
 .card-wrapper:hover {
   color: var(--white);
   .front{
-    transform: translateY(-25%) scale(.8);
+    transform: translateY(-30%) scale(.8);
   }
 
   .back{

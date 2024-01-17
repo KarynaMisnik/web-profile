@@ -10,7 +10,7 @@ const Hero = () => {
       </div>
       <div className="about-container">
         <h1>
-          I am <span>Karyna</span>
+          Hello, I am <span>Karyna</span>
         </h1>
         <p className="about-me">
           I am an Associate Degree holder in Software Development with a fervor
