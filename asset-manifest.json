@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/web-profile/static/css/main.b46f27c7.css",
+    "main.js": "/web-profile/static/js/main.81fe5f04.js",
+    "static/media/me-sl.jpg": "/web-profile/static/media/me-sl.75bc89c76d442451ca8f.jpg",
+    "static/media/color-image.png": "/web-profile/static/media/color-image.3106e2389e74df814236.png",
+    "static/media/Honey-SPA-shop.png": "/web-profile/static/media/Honey-SPA-shop.23f1c8a1a32927b299bf.png",
+    "static/media/FinnishEmblem.png": "/web-profile/static/media/FinnishEmblem.8894486cd79343e042fb.png",
+    "static/media/Tiny Tech Exhibits.png": "/web-profile/static/media/Tiny Tech Exhibits.6318d3996fe16b2d841e.png",
+    "static/media/my_resume.pdf": "/web-profile/static/media/my_resume.28f091e1c694beede967.pdf",
+    "index.html": "/web-profile/index.html",
+    "main.b46f27c7.css.map": "/web-profile/static/css/main.b46f27c7.css.map",
+    "main.81fe5f04.js.map": "/web-profile/static/js/main.81fe5f04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b46f27c7.css",
+    "static/js/main.81fe5f04.js"
+  ]
+}
