@@ -9,7 +9,7 @@ const showcaseData = [
     alt: 'Preview of Honey&Products SPA web store',
     links: {
       github: 'https://github.com/KarynaMisnik/bee_e-spa',
-      demo: 'https://example1.com',
+      demo: 'https://karynamisnik.github.io/Honey-web/',
     },
     description: (
       <p>
@@ -43,7 +43,7 @@ const showcaseData = [
     alt: 'Preview of Finnish Emblem web app about Finnish coat of arms',
     links: {
       github: 'https://github.com/KarynaMisnik/coat-of-arms',
-      demo: 'https://example1.com',
+      demo: 'https://karynamisnik.github.io/coat-of-arms/',
     },
     description: (
       <p>
