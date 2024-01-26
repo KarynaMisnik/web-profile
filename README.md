@@ -3,6 +3,13 @@
 
 - [ ] In CV lines(borders) for mobile should be hidden;
 
+<details>
+<summary><h1>Preview</h1></summary>
+
+![web-portfolio-preview](https://github.com/KarynaMisnik/web-profile/assets/96831988/b838f775-8f1a-4112-a2df-18045210ad9a)
+
+  
+</details>
 
 ## My Portfolio
 
