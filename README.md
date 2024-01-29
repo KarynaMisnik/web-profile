@@ -1,8 +1,3 @@
-## 📜 TO-DO:
-
-
-- [ ] In CV lines(borders) for mobile should be hidden;
-
 <details>
 <summary><h1>Preview</h1></summary>
 
