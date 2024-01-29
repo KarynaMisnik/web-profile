@@ -81,12 +81,6 @@ p {
   margin-right: 0.3rem;
 }
 
-@media (max-width: 18.625em) {
-  .cv-contact-info {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .left-part,
 .right-part {
   padding: 1rem 0rem 1.5rem 1.5rem;
@@ -141,4 +135,13 @@ p {
 .work-place {
   padding-top: 0.5rem;
   color: var(--cv-color-gray);
+}
+
+@media (max-width: 18.625em) {
+  .cv-contact-info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .right-part {
+    border: none;
+  }
 }

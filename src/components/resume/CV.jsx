@@ -6,7 +6,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 import Grid from '@mui/material/Grid'
-import myPDF from '../../assets/my_resume.pdf'
+import myPDF from '../../assets/my-resume.pdf'
 
 import CVDataWork from './CvDataWork'
 import CvDataProfile from './CvDataProfile'

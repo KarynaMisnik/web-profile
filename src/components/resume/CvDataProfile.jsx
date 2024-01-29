@@ -1,6 +1,7 @@
 import React from 'react'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import LinkIcon from '@mui/icons-material/Link'
 
 const CvDataProfile = [
   {
@@ -24,6 +25,11 @@ const CvDataProfile = [
         platform: 'GitHub',
         icon: <GitHubIcon sx={{ fontSize: '2rem' }} />,
         link: 'https://github.com/your-github-profile',
+      },
+      {
+        platform: 'Web Page',
+        icon: <LinkIcon sx={{ fontSize: '2rem', rotate: '-45deg' }} />,
+        link: 'https://karynamisnik.github.io/web-profile/',
       },
     ],
   },
