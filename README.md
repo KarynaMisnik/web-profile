@@ -9,7 +9,7 @@
 
 ## My Portfolio
 
-My practical progress in learning programming is now visible and clickable. 🙂
+My practical progress in learning web development is now visible and clickable. 🙂
 
 ## Overview
 
