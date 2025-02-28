@@ -12,6 +12,30 @@ body {
   color: white;
 }
 
+/* Start Screen */
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#start-btn {
+  font-size: 24px;
+  padding: 20px 40px;
+  border: 4px solid white;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#start-btn:hover {
+  background: white;
+  color: black;
+}
+
 /* Simple styling for the loading screen and progress bar */
 #loading-screen {
   position: fixed;
