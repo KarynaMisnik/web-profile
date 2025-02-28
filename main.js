@@ -8,7 +8,8 @@ window.addEventListener("load", function () {
 
   // Event listener for the Start button
   startButton.addEventListener("click", function () {
-    // Show the loading screen when the button is clicked
+    // Hide the start button and show the loading screen
+    startButton.style.display = "none";
     loadingScreen.style.display = "flex";
 
     // Set the progress
@@ -24,7 +25,7 @@ window.addEventListener("load", function () {
         setTimeout(() => {
           loadingScreen.style.display = "none"; // Hide loading screen
           // Redirect to main.html after loading is complete
-          window.location.href = "pages/main.html";
+          window.location.href = "main.html";
         }, 500); // Delay to let the final 100% be visible
       }
     }, 150); // Speed of progress (can be adjusted)
