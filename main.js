@@ -25,7 +25,7 @@ window.addEventListener("load", function () {
         setTimeout(() => {
           loadingScreen.style.display = "none"; // Hide loading screen
           // Redirect to main.html after loading is complete
-          window.location.href = "main.html";
+          window.location.href = "pages/main.html";
         }, 500); // Delay to let the final 100% be visible
       }
     }, 150); // Speed of progress (can be adjusted)
