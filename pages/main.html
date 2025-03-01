@@ -12,8 +12,18 @@
 <body class="main-page">
     <h1 class="h1 welcome-title">Welcome to My Pixel Portfolio</h1>
     <div class="menu-container">
-    <img loading="lazy" src="../images/character.png">
+       <img clas="character"  loading="lazy" src="../images/character.png" onclick="toggleSpeech()">
+        <div class="speech-bubble" id="speechBubble">
+            <p>Hello, traveler! Choose an option:</p>
+            <ul class="menu-options">
+                <li onclick="optionSelected('Talk')">Talk</li>
+                <li onclick="optionSelected('Shop')">Shop</li>
+                <li onclick="optionSelected('Leave')">Leave</li>
+            </ul>
+        </div>
     </div>
+    <script src="../main.js"></script>
 </body>
 
 </html>
+

@@ -31,3 +31,14 @@ window.addEventListener("load", function () {
     }, 150); // Speed of progress (can be adjusted)
   });
 });
+
+/* CHARACTER MAIN PAGE FUNCTIONS */
+function toggleSpeech() {
+  let bubble = document.getElementById("speechBubble");
+  bubble.style.display = bubble.style.display === "block" ? "none" : "block";
+}
+
+function optionSelected(option) {
+  alert("You selected: " + option);
+  document.getElementById("speechBubble").style.display = "none";
+}

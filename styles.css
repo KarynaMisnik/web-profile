@@ -73,10 +73,70 @@ body {
 }
 
 .menu-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  position: relative;
+  display: inline-block;
+  margin-right: 50px;
 }
+
+.character {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Speech Bubble */
+.speech-bubble {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  background: white;
+  color: black;
+  padding: 15px;
+  border: 4px solid black;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 4px 4px black;
+  display: none; /* Initially hidden */
+}
+
+/* Pixelated Speech Bubble Triangle */
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 16px solid white;
+  filter: drop-shadow(2px 2px black);
+}
+
+/* Interactive Menu */
+.menu-options {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.menu-options li {
+  background: black;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.menu-options li:hover {
+  background: white;
+  color: black;
+}
+
 /* MENU ENDS */
