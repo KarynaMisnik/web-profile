@@ -72,25 +72,27 @@ body {
   margin: 4rem 0;
 }
 
+/* Menu Container */
 .menu-container {
-  position: relative;
-  display: inline-block;
-  margin-right: 50px;
-}
-
-.character {
   display: flex;
   align-items: center;
-  justify-content: center;
+  position: relative;
+}
+
+/* Character Image */
+.character {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
 }
 
 /* Speech Bubble */
 .speech-bubble {
   position: absolute;
-  top: -90px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
+  left: 120px; /* Move it to the right of the character */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 220px;
   background: white;
   color: black;
   padding: 15px;
@@ -101,18 +103,18 @@ body {
   display: none; /* Initially hidden */
 }
 
-/* Pixelated Speech Bubble Triangle */
-.speech-bubble::after {
+/* Pixelated Triangle */
+.speech-bubble::before {
   content: "";
   position: absolute;
-  bottom: -16px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  left: -20px; /* Places triangle on the left */
+  transform: translateY(-50%);
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 16px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid white; /* Triangle pointing left */
   filter: drop-shadow(2px 2px black);
 }
 
@@ -138,5 +140,4 @@ body {
   background: white;
   color: black;
 }
-
 /* MENU ENDS */
