@@ -66,3 +66,17 @@ body {
   color: white;
   font-size: 16px;
 }
+
+/* MENU STARTS */
+.welcome-title {
+  margin: 4rem 0;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* MENU ENDS */
