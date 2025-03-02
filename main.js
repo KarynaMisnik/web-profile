@@ -32,13 +32,24 @@ window.addEventListener("load", function () {
   });
 });
 
-/* CHARACTER MAIN PAGE FUNCTIONS */
+//MAYBE WILL USE LATER, FOR NOW COMMENTED OUT
+/* CHARACTER MAIN PAGE FUNCTIONS 
 function toggleSpeech() {
   let bubble = document.getElementById("speechBubble");
   bubble.style.display = bubble.style.display === "block" ? "none" : "block";
 }
 
 function optionSelected(option) {
-  alert("You selected: " + option);
-  document.getElementById("speechBubble").style.display = "none";
+  let pageMap = {
+    About: "about.html",
+    Skills: "skills.html",
+    Projects: "projects.html",
+  };
+
+  if (pageMap[option]) {
+    window.location.href = pageMap[option]; // Redirect to the selected page
+  } else {
+    console.error("No page found for option:", option);
+  }
 }
+*/
