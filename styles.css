@@ -72,6 +72,13 @@ html {
   } /* Adjust for floating effect */
 }
 
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Start Button */
 #start-btn {
   font-family: var(--main-font);
