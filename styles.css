@@ -42,7 +42,8 @@ html {
 /* Clouds */
 .cloud {
   position: absolute;
-  width: 120px; /* Adjust size as needed */
+
+  height: auto;
   opacity: 0.8;
   animation: floatClouds 4s infinite ease-in-out alternate;
 }
@@ -73,7 +74,6 @@ html {
 
 /* Start Button */
 #start-btn {
-  position: absolute;
   font-family: var(--main-font);
   bottom: 50px;
   padding: 10px 20px;
@@ -87,6 +87,19 @@ html {
 #start-btn:hover {
   background: black;
   color: white;
+}
+
+/* GRASS SECTION */
+#grass {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #87ceeb;
+}
+#canvas {
+  display: block;
 }
 
 #loading-screen {
