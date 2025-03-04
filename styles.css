@@ -29,6 +29,16 @@ html {
   align-items: center;
 }
 
+/* Sections gradients */
+.sky {
+  background: linear-gradient(to bottom, #0d1b42, #a8e6cf);
+}
+.middle {
+  background: linear-gradient(to bottom, #a8e6cf, #2a623d);
+}
+.bottom {
+  background: linear-gradient(to bottom, #2a623d, #3aaf55);
+}
 /* Clouds */
 .cloud {
   position: absolute;
