@@ -32,6 +32,34 @@ window.addEventListener("load", function () {
   });
 });
 
+/* MAIN PAGE: FALLING LEAVES */
+function createLeaf() {
+  const leaf = document.createElement("div");
+  leaf.classList.add("leaf");
+
+  // Random starting position at the top of the page
+  leaf.style.left = `${Math.random() * window.innerWidth}px`;
+  leaf.style.top = "0px"; // Start from the very top
+
+  // Random animation duration for each leaf (falling time between 3s and 6s)
+  const duration = 3 + Math.random() * 4; // Duration between 3s to s
+
+  leaf.style.animationDuration = `${duration}s`; // Randomize fall time
+
+  // Append leaf to container
+  document.querySelector(".falling-leaves").appendChild(leaf);
+
+  // Remove the leaf after animation duration
+  setTimeout(() => {
+    leaf.remove();
+  }, duration * 500); // Match the duration of the animation (falling time)
+}
+
+// Generate leaves at a random interval (between 0.5s and 2s)
+setInterval(createLeaf, Math.random() * 1500 + 500); // Random interval between 500ms to 2s
+
+/* MAIN PAGE: FALLING LEAVES - END */
+
 //MAYBE WILL USE LATER, FOR NOW COMMENTED OUT
 /* CHARACTER MAIN PAGE FUNCTIONS 
 function toggleSpeech() {

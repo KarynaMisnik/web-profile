@@ -7,7 +7,7 @@
 body {
   font-family: var(--main-font);
   text-align: center;
-
+  overflow: hidden;
   color: white;
 }
 
@@ -133,6 +133,48 @@ html {
   }
 }
 
+/* Falling leaves */
+.falling-leaves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Make sure the container takes the full viewport height */
+  pointer-events: none; /* Prevent interaction with falling leaves */
+}
+
+.leaf {
+  position: absolute;
+  width: 50px; /* Adjust the size based on your image */
+  height: 50px; /* Adjust the size based on your image */
+  background-image: url("./images/trees/leaf.png"); /* Replace with your image URL */
+  background-size: contain; /* This ensures the image fits inside the div */
+  background-repeat: no-repeat;
+  image-rendering: pixelated; /* Ensures the image stays pixelated */
+  animation: fall 6s linear infinite; /* Infinite falling animation */
+}
+
+@keyframes fall {
+  0% {
+    top: 0;
+    opacity: 1;
+    transform: translateX(0); /* Start at the center */
+  }
+  25% {
+    transform: translateX(-15px); /* Sway left more */
+  }
+  50% {
+    transform: translateX(15px); /* Sway right more */
+  }
+  75% {
+    transform: translateX(-15px); /* Sway left more */
+  }
+  100% {
+    top: 100vh; /* Fall to the bottom */
+    opacity: 0;
+    transform: translateX(0); /* End at the center */
+  }
+}
 #loading-screen {
   position: fixed;
   top: 0;
