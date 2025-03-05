@@ -147,8 +147,9 @@ html {
 .leaf {
   position: absolute;
   width: 50px; /* Adjust the size based on your image */
-
+  height: 33.33vh; /* This keeps the section's height consistent */
   background-image: url("./images/trees/leaf.png"); /* Replace with your image URL */
+  background-size: 100% 50%; /* Make the background image take 50% of the height */
   background-size: contain; /* This ensures the image fits inside the div */
   background-repeat: no-repeat;
   image-rendering: pixelated; /* Ensures the image stays pixelated */
