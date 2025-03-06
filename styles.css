@@ -66,6 +66,10 @@ html {
   top: 15vh;
   left: 70%;
 }
+.cloud5 {
+  top: 15vh;
+  left: 20%;
+}
 
 /* Floating up and down */
 @keyframes floatClouds {
