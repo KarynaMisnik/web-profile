@@ -55,10 +55,14 @@ html {
   left: 10%;
 }
 .cloud2 {
-  top: 10vh;
+  top: 8vh;
   left: 40%;
 }
 .cloud3 {
+  top: 10vh;
+  left: 50%;
+}
+.cloud4 {
   top: 15vh;
   left: 70%;
 }
