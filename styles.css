@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css?family=Press Start 2P");
+
+:root {
+  --main-font: "Press Start 2P";
+}
+
+body {
+  font-family: var(--main-font);
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Make sure body fits the screen */
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 33.33vh; /* Each section takes 1/3 of the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sections gradients */
+.sky {
+  background: linear-gradient(to bottom, #0d1b42, #a8e6cf);
+}
+.middle {
+  background: linear-gradient(to bottom, #a8e6cf, #2a623d);
+}
+.bottom {
+  background: linear-gradient(to bottom, #2a623d, #3aaf55);
+}
+/* Clouds */
+.cloud {
+  position: absolute;
+
+  height: auto;
+  opacity: 0.8;
+  animation: floatClouds 4s infinite ease-in-out alternate;
+}
+
+/* Adjust clouds to stay within the sky section */
+.cloud1 {
+  top: 5vh;
+  left: 10%;
+}
+.cloud2 {
+  top: 10vh;
+  left: 40%;
+}
+.cloud3 {
+  top: 15vh;
+  left: 70%;
+}
+
+/* Floating up and down */
+@keyframes floatClouds {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(15px);
+  } /* Adjust for floating effect */
+}
+
+.middle {
+  position: relative;
+  width: 100%;
+  height: 33.33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button styling */
+#start-btn {
+  font-size: 24px;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffcc00;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Tree Branches - Left */
+.tree-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: auto;
+}
+
+/* Tree Branches - Right */
+.tree-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: auto;
+}
+
+/* Responsive Adjustments for Mobile */
+@media (max-width: 768px) {
+  .tree-left,
+  .tree-right {
+    height: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tree-left,
+  .tree-right {
+    height: 60%;
+  }
+
+  #start-btn {
+    font-size: 18px;
+    padding: 8px 20px;
+  }
+}
+
+/* Falling leaves */
+.falling-leaves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Make sure the container takes the full viewport height */
+  pointer-events: none; /* Prevent interaction with falling leaves */
+}
+
+.leaf {
+  position: absolute;
+  width: 50px; /* Adjust the size based on your image */
+  height: 33.33vh; /* This keeps the section's height consistent */
+  background-image: url("./images/trees/leaf.png"); /* Replace with your image URL */
+  background-size: 100% 50%; /* Make the background image take 50% of the height */
+  background-size: contain; /* This ensures the image fits inside the div */
+  background-repeat: no-repeat;
+  image-rendering: pixelated; /* Ensures the image stays pixelated */
+  animation: fall 6s linear infinite; /* Infinite falling animation */
+}
+
+@keyframes fall {
+  0% {
+    top: 0;
+    opacity: 1;
+    transform: translateX(0); /* Start at the center */
+  }
+  25% {
+    transform: translateX(-15px); /* Sway left more */
+  }
+  50% {
+    transform: translateX(15px); /* Sway right more */
+  }
+  75% {
+    transform: translateX(-15px); /* Sway left more */
+  }
+  100% {
+    top: 100vh; /* Fall to the bottom */
+    opacity: 0;
+    transform: translateX(0); /* End at the center */
+  }
+}
+
+.section.bottom {
+  position: relative; /* To position leaves in front of it */
+  width: 100%;
+  min-height: 50px; /* Adjust the height of the grass section (change to desired height) */
+  background-image: url("./images/trees/grass-platform.png"); /* Your grass background image */
+  background-size: cover; /* Ensure the background image covers the full width and height of the section */
+  background-position: bottom center; /* Align the image at the bottom */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  display: flex;
+  justify-content: center; /* Ensure contents are aligned properly */
+  align-items: flex-end; /* Align contents to the bottom of the section */
+}
+
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.bar-container {
+  width: 80%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 20px;
+  background-color: #4caf50;
+  width: 0;
+}
+
+#loading-text {
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+/*!!! NOT IN USE FOR NOW */
+/* MENU STARTS */
+.welcome-title {
+  margin: 4rem 0;
+}
+
+/* Menu Container */
+.menu-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+/* Character Image */
+.character {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Speech Bubble */
+.speech-bubble {
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 220px;
+  background: white;
+  color: black;
+  padding: 15px;
+  border: 4px solid black;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 4px 4px black;
+  display: none; /* Initially hidden */
+}
+
+/* Pixelated Triangle */
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px; /* Places triangle on the left */
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid white; /* Triangle pointing left */
+  filter: drop-shadow(2px 2px black);
+}
+
+/* Interactive Menu */
+.menu-options {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.menu-options li {
+  background: black;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.menu-options li:hover {
+  background: white;
+  color: black;
+}
+/* MENU ENDS */
