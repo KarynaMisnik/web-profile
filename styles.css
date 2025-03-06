@@ -199,6 +199,10 @@ html {
   align-items: flex-end; /* Align contents to the bottom of the section */
 }
 
+.bottom {
+  background-color: #2a623d;
+}
+
 #loading-screen {
   position: fixed;
   top: 0;
