@@ -51,14 +51,9 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    #5fb9fa,
-    /* Light Sky Blue */ #c1e5b5,
-    /* Soft Pastel Green */ #79c459 /* Light Grass Green */
-  ); /* Customize gradient */
-  opacity: 0.6; /* Adjust opacity to blend with the background */
-  z-index: -1; /* Stays behind other content */
+  background: linear-gradient(to bottom, #5fb9fa, #c1e5b5, #79c459);
+  opacity: 0.6;
+  z-index: -1;
 }
 
 /* Clouds */
@@ -101,10 +96,11 @@ html {
   } /* Adjust for floating effect */
 }
 
-/* Button styling */
+/* Button styling 
 #start-btn {
   font-size: 24px;
   padding: 10px 30px;
+  font-family: var(--main-font);
   border: none;
   cursor: pointer;
   background-color: #ffcc00;
@@ -112,6 +108,48 @@ html {
   font-weight: bold;
   border-radius: 5px;
 }
+  */
+
+/* START Button hover effect */
+
+#start-btn a {
+  text-decoration: none;
+  padding: 20px 40px;
+  color: white;
+  border: 3px solid white;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: sans-serif;
+  position: relative;
+  transition: 1s;
+  overflow: hidden;
+}
+#start-btn a:hover {
+  background-color: rgb(205, 37, 37);
+}
+#start-btn a::before {
+  content: "";
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  transform: translateX(-100%) rotate(45deg);
+  transition: 1s;
+}
+#start-btn a:hover::before {
+  transform: translateX(100%) rotate(45deg);
+}
+
+#start-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* START Button hover effect ENDS */
 
 /* Tree Branches - Left */
 .tree-left {
