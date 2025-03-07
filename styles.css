@@ -32,14 +32,12 @@ html {
 
 /* Sections gradients */
 .sky {
-  background: linear-gradient(to bottom, #0d1b42, #a8e6cf);
+  background: linear-gradient(to bottom, #4361b6, #a8e6cf);
 }
 .middle {
-  background: linear-gradient(to bottom, #a8e6cf, #2a623d);
+  background: linear-gradient(to bottom, #a8e6cf, #3aaf55);
 }
-.bottom {
-  background: linear-gradient(to bottom, #2a623d, #3aaf55);
-}
+
 /* Clouds */
 .cloud {
   position: absolute;
@@ -161,7 +159,7 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
   image-rendering: pixelated;
-  animation: fall 6s linear infinite;
+  animation: fall 6s linear infinite; /* Infinite falling animation */
 }
 
 @keyframes fall {
@@ -200,7 +198,7 @@ html {
 }
 
 .bottom {
-  background-color: #2a623d;
+  background-color: #3aaf55;
 }
 
 #loading-screen {
