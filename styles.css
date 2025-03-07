@@ -22,9 +22,9 @@ html {
 }
 
 .section {
-  position: relative;
   width: 100%;
-  height: 33.33vh; /* Each section takes 1/3 of the screen */
+  flex: 1;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,9 +43,22 @@ html {
   justify-content: space-between;
 }
 
-/* Sections bg color */
-.sky {
-  background: linear-gradient(to bottom, #4361b6, #a8e6cf);
+/* Gradient Overlay */
+.bg-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #5fb9fa,
+    /* Light Sky Blue */ #c1e5b5,
+    /* Soft Pastel Green */ #79c459 /* Light Grass Green */
+  ); /* Customize gradient */
+  opacity: 0.6; /* Adjust opacity to blend with the background */
+  z-index: -1; /* Stays behind other content */
 }
 
 /* Clouds */
