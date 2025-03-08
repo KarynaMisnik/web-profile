@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Press Start 2P");
 
+/*!TO DO probably separate styles in different files, create common css file import then */
+
 :root {
   --main-font: "Press Start 2P";
 }
