@@ -116,20 +116,6 @@ html {
   }
 }
 
-/* Button styling 
-#start-btn {
-  font-size: 24px;
-  padding: 10px 30px;
-  font-family: var(--main-font);
-  border: none;
-  cursor: pointer;
-  background-color: #ffcc00;
-  color: #333;
-  font-weight: bold;
-  border-radius: 5px;
-}
-  */
-
 /* START Button hover effect */
 
 #start-btn a {
