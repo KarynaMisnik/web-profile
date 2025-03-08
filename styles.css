@@ -62,10 +62,12 @@ html {
   position: absolute;
   height: auto;
   opacity: 0.8;
-  animation: floatClouds 4s infinite ease-in-out alternate;
+  animation: float 4s infinite ease-in-out alternate,
+    moveClouds 70s infinite linear;
+  will-change: transform; /* Optimizes performance */
 }
 
-/* Adjust clouds to stay within the sky section */
+/* Adjust clouds to start at different positions */
 .cloud1 {
   top: 5vh;
   left: 10%;
@@ -88,13 +90,23 @@ html {
 }
 
 /* Floating up and down */
-@keyframes floatClouds {
+@keyframes float {
   from {
     transform: translateY(0px);
   }
   to {
     transform: translateY(15px);
   } /* Adjust for floating effect */
+}
+
+/* Moving clouds forward infinitely */
+@keyframes moveClouds {
+  from {
+    transform: translateX(-10vw);
+  }
+  to {
+    transform: translateX(100vw);
+  }
 }
 
 /* Button styling 
