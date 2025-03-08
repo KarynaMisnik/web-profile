@@ -63,7 +63,7 @@ html {
   height: auto;
   opacity: 0.8;
   animation: float 4s infinite ease-in-out alternate,
-    moveClouds 70s infinite linear;
+    moveClouds 40s infinite linear;
   will-change: transform; /* Optimizes performance */
 }
 
