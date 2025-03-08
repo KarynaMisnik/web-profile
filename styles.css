@@ -70,23 +70,28 @@ html {
 /* Adjust clouds to start at different positions */
 .cloud1 {
   top: 5vh;
-  left: 10%;
+  left: -20vw;
+  animation-delay: 0s;
 }
 .cloud2 {
   top: 8vh;
-  left: 40%;
+  left: -30vw;
+  animation-delay: 5s;
 }
 .cloud3 {
   top: 10vh;
-  left: 50%;
+  left: -40vw;
+  animation-delay: 10s;
 }
 .cloud4 {
   top: 15vh;
-  left: 70%;
+  left: -50vw;
+  animation-delay: 15s;
 }
 .cloud5 {
   top: 15vh;
-  left: 20%;
+  left: -60vw;
+  animation-delay: 20s;
 }
 
 /* Floating up and down */
@@ -105,7 +110,7 @@ html {
     transform: translateX(-10vw);
   }
   to {
-    transform: translateX(100vw);
+    transform: translateX(120vw);
   }
 }
 
