@@ -242,21 +242,21 @@ html {
   0% {
     top: 0;
     opacity: 1;
-    transform: translateX(0); /* Start at the center */
+    transform: translateX(0); 
   }
   25% {
-    transform: translateX(-15px); /* Sway left more */
+    transform: translateX(-15px); /
   }
   50% {
-    transform: translateX(15px); /* Sway right more */
+    transform: translateX(15px); 
   }
   75% {
-    transform: translateX(-15px); /* Sway left more */
+    transform: translateX(-15px);
   }
   100% {
-    top: 100vh; /* Fall to the bottom */
+    top: 100vh; 
     opacity: 0;
-    transform: translateX(0); /* End at the center */
+    transform: translateX(0); 
   }
 }
 
