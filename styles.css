@@ -235,7 +235,7 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
   image-rendering: pixelated;
-  animation: fall 6s linear infinite; /* Infinite falling animation */
+  animation: fall 6s linear infinite; 
 }
 
 @keyframes fall {
