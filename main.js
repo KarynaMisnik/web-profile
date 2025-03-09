@@ -32,7 +32,7 @@ window.addEventListener("load", function () {
   });
 });
 
-/* MAIN PAGE: FALLING LEAVES */
+/* INDEX PAGE: FALLING LEAVES */
 function createLeaf() {
   const leaf = document.createElement("div");
   leaf.classList.add("leaf");
