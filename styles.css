@@ -176,7 +176,7 @@ html {
 
 /* START Button hover effect ENDS */
 
-/* Tree Branches - Left */
+
 .tree-left {
   position: absolute;
   left: 0;
@@ -186,7 +186,7 @@ html {
   width: auto;
 }
 
-/* Tree Branches - Right */
+
 .tree-right {
   position: absolute;
   right: 0;
@@ -222,7 +222,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; /* Make sure the container takes the full viewport height */
+  height: 100vh; 
   pointer-events: none; /* Prevent interaction with falling leaves */
 }
 
