@@ -120,3 +120,29 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 */
+
+/* DIALOG BOX */
+function showDialogue(text) {
+  const dialogueBox = document.querySelector(".dialogue-box");
+  const dialogueText = document.getElementById("dialogue-text");
+
+  dialogueBox.style.opacity = "1"; // Show the box
+
+  let i = 0;
+  dialogueText.innerHTML = ""; // Clear previous text
+
+  function typeLetter() {
+    if (i < text.length) {
+      dialogueText.innerHTML += text[i];
+      i++;
+      setTimeout(typeLetter, 50); // Adjust speed here (50ms per letter)
+    }
+  }
+
+  typeLetter();
+}
+
+// Example: Show dialogue when clicking a button
+document.getElementById("start-btn").addEventListener("click", function () {
+  showDialogue("Welcome to my portfolio! Let's start the adventure.");
+});
