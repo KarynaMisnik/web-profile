@@ -60,28 +60,6 @@ setInterval(createLeaf, Math.random() * 1500 + 500); // Random interval between 
 
 /* MAIN PAGE: FALLING LEAVES - END */
 
-//MAYBE WILL USE LATER, FOR NOW COMMENTED OUT
-/* CHARACTER MAIN PAGE FUNCTIONS 
-function toggleSpeech() {
-  let bubble = document.getElementById("speechBubble");
-  bubble.style.display = bubble.style.display === "block" ? "none" : "block";
-}
-
-function optionSelected(option) {
-  let pageMap = {
-    About: "about.html",
-    Skills: "skills.html",
-    Projects: "projects.html",
-  };
-
-  if (pageMap[option]) {
-    window.location.href = pageMap[option]; // Redirect to the selected page
-  } else {
-    console.error("No page found for option:", option);
-  }
-}
-*/
-
 /* DIALOG BOX */
 function showDialogue(text) {
   const dialogueBox = document.querySelector(".dialogue-box");
@@ -107,3 +85,25 @@ function showDialogue(text) {
 document.getElementById("start-btn").addEventListener("click", function () {
   showDialogue("Welcome to my portfolio! Let's start the adventure.");
 });
+
+//MAYBE WILL USE LATER, FOR NOW COMMENTED OUT
+/* CHARACTER MAIN PAGE FUNCTIONS 
+function toggleSpeech() {
+  let bubble = document.getElementById("speechBubble");
+  bubble.style.display = bubble.style.display === "block" ? "none" : "block";
+}
+
+function optionSelected(option) {
+  let pageMap = {
+    About: "about.html",
+    Skills: "skills.html",
+    Projects: "projects.html",
+  };
+
+  if (pageMap[option]) {
+    window.location.href = pageMap[option]; // Redirect to the selected page
+  } else {
+    console.error("No page found for option:", option);
+  }
+}
+*/
