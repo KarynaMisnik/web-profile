@@ -82,45 +82,6 @@ function optionSelected(option) {
 }
 */
 
-/*
-//GRASS GENERATOR
-document.addEventListener("DOMContentLoaded", () => {
-  const canvas = document.getElementById("canvas");
-  const ctx = canvas.getContext("2d");
-  const container = document.getElementById("grass");
-
-  function resizeCanvas() {
-    if (!container) return;
-    canvas.width = container.clientWidth;
-    canvas.height = container.clientHeight;
-    generateGrass();
-  }
-
-  // Different shades of green for variety
-  const grassColors = [
-    "#228B22", // Forest Green
-    "#32CD32", // Lime Green
-    "#008000", // Green
-    "#2E8B57", // Sea Green
-  ];
-
-  function generateGrass() {
-    const PIXEL_SIZE = 4;
-    for (let y = 0; y < canvas.height; y += PIXEL_SIZE) {
-      for (let x = 0; x < canvas.width; x += PIXEL_SIZE) {
-        let color = grassColors[Math.floor(Math.random() * grassColors.length)];
-        ctx.fillStyle = color;
-        ctx.fillRect(x, y, PIXEL_SIZE, PIXEL_SIZE);
-      }
-    }
-  }
-
-  window.addEventListener("resize", resizeCanvas);
-  resizeCanvas(); // Initial call after DOM is loaded
-});
-
-*/
-
 /* DIALOG BOX */
 function showDialogue(text) {
   const dialogueBox = document.querySelector(".dialogue-box");
