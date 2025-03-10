@@ -59,24 +59,3 @@ function createLeaf() {
 setInterval(createLeaf, Math.random() * 1500 + 500); // Random interval between 500ms to 2s
 
 /* MAIN PAGE: FALLING LEAVES - END */
-
-/* DIALOG BOX */
-function showDialogue(text) {
-  const dialogueBox = document.querySelector(".dialogue-box");
-  const dialogueText = document.getElementById("dialogue-text");
-
-  dialogueBox.style.opacity = "1"; // Show the box
-
-  let i = 0;
-  dialogueText.innerHTML = ""; // Clear previous text
-
-  function typeLetter() {
-    if (i < text.length) {
-      dialogueText.innerHTML += text[i];
-      i++;
-      setTimeout(typeLetter, 50); // Adjust speed here (50ms per letter)
-    }
-  }
-
-  typeLetter();
-}
