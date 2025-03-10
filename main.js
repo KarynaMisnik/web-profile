@@ -80,8 +80,3 @@ function showDialogue(text) {
 
   typeLetter();
 }
-
-// Example: Show dialogue when clicking a button
-document.getElementById("start-btn").addEventListener("click", function () {
-  showDialogue("Welcome to my portfolio! Let's start the adventure.");
-});
