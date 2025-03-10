@@ -33,17 +33,5 @@ window.addEventListener("load", function () {
 });
 
 /* INDEX PAGE: FALLING LEAVES */
-function createLeaf() {
-  const leaf = document.createElement("div");
-  leaf.classList.add("leaf");
 
-  // Random starting position at the top of the page
-  leaf.style.left = `${Math.random() * window.innerWidth}px`;
-  leaf.style.top = "0px"; // Start from the very top
-
-  // Random animation duration for each leaf (falling time between 3s and 6s)
-  const duration = 3 + Math.random() * 4; // Duration between 3s to s
-
-  leaf.style.animationDuration = `${duration}s`; // Randomize fall time
-}
 /* MAIN PAGE: FALLING LEAVES - END */
