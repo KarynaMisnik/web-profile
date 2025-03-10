@@ -93,12 +93,6 @@ function toggleSpeech() {
   bubble.style.display = bubble.style.display === "block" ? "none" : "block";
 }
 
-function optionSelected(option) {
-  let pageMap = {
-    About: "about.html",
-    Skills: "skills.html",
-    Projects: "projects.html",
-  };
 
  
 */
