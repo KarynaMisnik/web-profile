@@ -100,10 +100,5 @@ function optionSelected(option) {
     Projects: "projects.html",
   };
 
-  if (pageMap[option]) {
-    window.location.href = pageMap[option]; // Redirect to the selected page
-  } else {
-    console.error("No page found for option:", option);
-  }
-}
+ 
 */
