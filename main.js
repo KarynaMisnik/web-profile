@@ -85,14 +85,3 @@ function showDialogue(text) {
 document.getElementById("start-btn").addEventListener("click", function () {
   showDialogue("Welcome to my portfolio! Let's start the adventure.");
 });
-
-//MAYBE WILL USE LATER, FOR NOW COMMENTED OUT
-/* CHARACTER MAIN PAGE FUNCTIONS 
-function toggleSpeech() {
-  let bubble = document.getElementById("speechBubble");
-  bubble.style.display = bubble.style.display === "block" ? "none" : "block";
-}
-
-
- 
-*/
