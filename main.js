@@ -45,17 +45,5 @@ function createLeaf() {
   const duration = 3 + Math.random() * 4; // Duration between 3s to s
 
   leaf.style.animationDuration = `${duration}s`; // Randomize fall time
-
-  // Append leaf to container
-  document.querySelector(".falling-leaves").appendChild(leaf);
-
-  // Remove the leaf after animation duration
-  setTimeout(() => {
-    leaf.remove();
-  }, duration * 500); // Match the duration of the animation (falling time)
 }
-
-// Generate leaves at a random interval (between 0.5s and 2s)
-setInterval(createLeaf, Math.random() * 1500 + 500); // Random interval between 500ms to 2s
-
 /* MAIN PAGE: FALLING LEAVES - END */
