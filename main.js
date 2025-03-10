@@ -1,11 +1,4 @@
 window.addEventListener("load", function () {
-  // Get the elements
-  let startButton = document.getElementById("start-btn");
-  let progress = 0;
-  let progressText = document.getElementById("loading-text");
-  let progressBar = document.querySelector(".bar-fill");
-  let loadingScreen = document.getElementById("loading-screen");
-
   // Event listener for the Start button
   startButton.addEventListener("click", function () {
     // Hide the start button and show the loading screen
