@@ -3,28 +3,6 @@
 
 
 
-/* Gradient Overlay */
-.bg-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, #5fb9fa, #c1e5b5, #79c459);
-  opacity: 0.6;
-  z-index: -1;
-}
-
-/* Clouds */
-.cloud {
-  position: absolute;
-  height: auto;
-  opacity: 0.8;
-  animation: float 4s infinite ease-in-out alternate,
-    moveClouds 40s infinite linear;
-  will-change: transform; /* Optimizes performance */
-}
 
 /* Adjust clouds to start at different positions */
 .cloud1 {
