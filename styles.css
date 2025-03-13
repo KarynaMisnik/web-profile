@@ -12,57 +12,6 @@
 
 
 
-/* START Button hover effect ENDS */
-
-
-.tree-left {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 100%;
-  width: auto;
-}
-
-
-.tree-right {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 100%;
-  width: auto;
-}
-
-/* Responsive Adjustments for Mobile */
-@media (max-width: 768px) {
-  .tree-left,
-  .tree-right {
-    height: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-  .tree-left,
-  .tree-right {
-    height: 60%;
-  }
-
-  #start-btn {
-    font-size: 18px;
-    padding: 8px 20px;
-  }
-}
-
-/* Falling leaves */
-.falling-leaves {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh; 
-  pointer-events: none; /* Prevent interaction with falling leaves */
-}
 
 .leaf {
   position: absolute;
