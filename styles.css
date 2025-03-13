@@ -1,27 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Press Start 2P");
 
-/*!TO DO probably separate styles in different files, create common css file import then */
 
-:root {
-  --main-font: "Press Start 2P";
-}
-
-body {
-  font-family: var(--main-font);
-  text-align: center;
-  overflow: hidden;
-  color: white;
-  box-sizing: border-box;
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100vh; /* Make sure body fits the screen */
-  display: flex;
-  flex-direction: column;
-}
 
 .section {
   width: 100%;
