@@ -10,22 +10,7 @@
 
 
 
-/* Hover Effect */
-#start-btn a:hover {
-  background: linear-gradient(180deg, #f0f0f0, #c0c0c0, #e0e0e0);
-}
 
-#start-btn a:hover::before {
-  left: 100%;
-}
-
-/* Centering */
-#start-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 /* START Button hover effect ENDS */
 
