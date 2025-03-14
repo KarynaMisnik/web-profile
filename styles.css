@@ -52,27 +52,3 @@
   border-right: 20px solid white; /* Triangle pointing left */
   filter: drop-shadow(2px 2px black);
 }
-
-/* Interactive Menu */
-.menu-options {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-}
-
-.menu-options li {
-  background: black;
-  color: white;
-  padding: 5px;
-  margin: 5px;
-  cursor: pointer;
-  border: 2px solid white;
-  text-transform: uppercase;
-  transition: all 0.2s;
-}
-
-.menu-options li:hover {
-  background: white;
-  color: black;
-}
-/* MENU ENDS */
