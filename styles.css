@@ -37,18 +37,3 @@
   box-shadow: 4px 4px black;
   display: none; /* Initially hidden */
 }
-
-/* Pixelated Triangle */
-.speech-bubble::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -20px; /* Places triangle on the left */
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 20px solid white; /* Triangle pointing left */
-  filter: drop-shadow(2px 2px black);
-}
