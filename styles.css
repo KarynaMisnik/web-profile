@@ -15,3 +15,42 @@
 body {
   background-color: var(--color-bg);
 }
+
+/* Navbar container */
+.navbar {
+  width: 100%;
+  padding: 1.5rem 0;
+  background: transparent; /* blends with page */
+  text-align: center;
+}
+
+/* Centered menu */
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 2.5rem; /* space between items */
+}
+
+/* Links */
+.nav-menu a {
+  color: #c4c4c4; /* light gray */
+  text-decoration: none;
+  font-family: "Press Start 2P", sans-serif; /* pixel-style font */
+  font-size: 0.9rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.nav-menu a:hover {
+  color: #ff1a1a; /* neon red */
+  text-shadow: 0 0 8px #ff1a1a;
+}
+
+/* Active state */
+.nav-menu a.active {
+  color: #ff1a1a;
+  border-bottom: 2px solid #ff1a1a;
+  padding-bottom: 0.2rem;
+}
