@@ -20,6 +20,7 @@ body {
   background-color: var(--color-bg);
 }
 
+/** Navigation Menu Styles **/
 /* Navbar container */
 .navbar {
   width: 100%;
@@ -57,4 +58,60 @@ body {
   color: #ff1a1a;
   border-bottom: 2px solid #ff1a1a;
   padding-bottom: 0.2rem;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  padding: 4rem 2rem;
+  background: transparent; /* blends with page */
+  color: #c4c4c4; /* light gray */
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+.hero-image img {
+  width: 220px;
+  height: auto;
+  border-radius: 12px; /* optional: soften pixel edges slightly */
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff1a1a; /* neon red for name */
+}
+
+.hero-text p {
+  font-family: "Inter", sans-serif; /* or any clean body font */
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #ff1a1a;
+  color: #ff1a1a;
+  text-decoration: none;
+  font-family: "Press Start 2P", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background: #ff1a1a;
+  color: #0d0d0d; /* dark background when hovered */
+  box-shadow: 0 0 8px #ff1a1a;
 }
