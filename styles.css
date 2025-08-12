@@ -11,3 +11,7 @@
   --color-accent: #ff1a1a;
   --color-border: #b00000;
 }
+
+body {
+  background-color: var(--color-bg);
+}
