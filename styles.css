@@ -10,6 +10,10 @@
   --color-subtext: #8a8a8a;
   --color-accent: #ff1a1a;
   --color-border: #b00000;
+
+  /*~ fonts ~*/
+
+  --primary-font: "Press Start 2P", sans-serif;
 }
 
 body {
@@ -37,7 +41,7 @@ body {
 .nav-menu a {
   color: #c4c4c4; /* light gray */
   text-decoration: none;
-  font-family: "Press Start 2P", sans-serif; /* pixel-style font */
+  font-family: var(--primary-font); /* pixel-style font */
   font-size: 0.9rem;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
