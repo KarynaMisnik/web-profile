@@ -14,6 +14,7 @@
   /*~ fonts ~*/
 
   --primary-font: "Press Start 2P", sans-serif;
+  --info-text: "Helvetica", sans-serif;
 }
 
 body {
@@ -40,7 +41,7 @@ body {
 
 /* Links */
 .nav-menu a {
-  color: #c4c4c4; /* light gray */
+  color: var(--color-text); /* light gray */
   text-decoration: none;
   font-family: var(--primary-font); /* pixel-style font */
   font-size: 0.9rem;
@@ -65,7 +66,7 @@ body {
   width: 100%;
   padding: 4rem 2rem;
   background: transparent; /* blends with page */
-  color: #c4c4c4; /* light gray */
+  color: var(--color-text); /* light gray */
 }
 
 .hero-container {
@@ -91,11 +92,11 @@ body {
   font-family: "Press Start 2P", sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #ff1a1a; /* neon red for name */
+  color: var(--color-text); /* neon red for name */
 }
 
 .hero-text p {
-  font-family: "Inter", sans-serif; /* or any clean body font */
+  font-family: var(--info-text);
   font-size: 1rem;
   margin-bottom: 2rem;
 }
