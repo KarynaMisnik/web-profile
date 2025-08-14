@@ -132,7 +132,7 @@ body {
 
 .about-text h1 {
   font-size: 6rem;
-  color: var(--color-accent);
+  color: var(--color-text);
   margin: 0;
   line-height: 1;
   text-transform: uppercase;
