@@ -213,6 +213,13 @@ body {
   image-rendering: pixelated;
 }
 
+.project-title {
+  margin-top: 15px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 1.2rem;
+  color: var(--color-text);
+}
+
 .project-tag {
   margin-top: 10px;
   font-family: var(--info-text);
