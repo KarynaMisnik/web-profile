@@ -220,14 +220,22 @@ body {
   color: var(--color-text);
 }
 
+.project-tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
 .project-tag {
   display: inline-block;
-  margin-top: 10px;
   padding: 4px 10px;
   background-color: #1a1a1a; /* slightly lighter than main div bg */
-  color: #ffffff;
+  color: var(--color-text);
   font-family: var(--info-text);
   font-size: 1rem;
+  font-weight: bold;
   border-radius: 4px;
 }
 
