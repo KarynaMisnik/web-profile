@@ -221,10 +221,14 @@ body {
 }
 
 .project-tag {
+  display: inline-block;
   margin-top: 10px;
+  padding: 4px 10px;
+  background-color: #1a1a1a; /* slightly lighter than main div bg */
+  color: #ffffff;
   font-family: var(--info-text);
-  color: var(--color-accent);
   font-size: 1rem;
+  border-radius: 4px;
 }
 
 .project-text {
