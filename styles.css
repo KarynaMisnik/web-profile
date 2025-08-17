@@ -176,16 +176,16 @@ body {
 }
 
 /* Projects Section */
-.projects-section {
+#projects-section {
   background-color: var(--color-bg);
   padding: 60px 20px;
   text-align: center;
   color: var(--color-text);
 }
 
-.projects-section h2 {
+#projects-section h2 {
   font-size: 4rem;
-  color: var(--color-accent);
+  color: var(--color-text);
   font-family: "Press Start 2P", monospace;
   margin-bottom: 40px;
   letter-spacing: 2px;
@@ -268,7 +268,7 @@ body {
 
 .interests-section h2 {
   font-size: 4rem;
-  color: var(--color-accent);
+  color: var(--color-text);
   font-family: "Press Start 2P", monospace;
   margin-bottom: 40px;
   letter-spacing: 2px;
