@@ -259,3 +259,60 @@ body {
 }
 
 /* Interest Section */
+.interests-section {
+  background-color: var(--color-bg);
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.interests-section h2 {
+  font-size: 4rem;
+  color: var(--color-accent);
+  font-family: "Press Start 2P", monospace;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.interests-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.interest img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  image-rendering: pixelated; /* pixelated effect */
+  transition: transform 0.3s ease;
+}
+
+.interest img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .interests-section h2 {
+    font-size: 3rem;
+  }
+
+  .interest img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .interests-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .interest img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
