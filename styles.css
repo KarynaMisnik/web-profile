@@ -175,6 +175,70 @@ body {
   }
 }
 
+/* Skills Section */
+.skills-section {
+  background-color: var(--color-bg);
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.skills-section h2 {
+  font-size: 4rem;
+  color: var(--color-accent);
+  font-family: "Press Start 2P", monospace;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  flex: 1 1 100px; /* allows multiple icons to fit in a row */
+  max-width: 100px;
+  text-align: center;
+}
+
+.skill img {
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  transition: transform 0.3s ease;
+}
+
+.skill img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .skills-section h2 {
+    font-size: 3rem;
+  }
+
+  .skill {
+    flex: 1 1 80px;
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .skill {
+    flex: 1 1 50%;
+    max-width: 200px;
+  }
+}
+
 /* Projects Section */
 #projects-section {
   background-color: var(--color-bg);
