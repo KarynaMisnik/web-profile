@@ -385,3 +385,51 @@ body {
     max-width: 300px;
   }
 }
+
+/* Footer */
+.footer {
+  background-color: var(--color-bg);
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-icons a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-icons img {
+  width: 40px;
+  height: 40px;
+  image-rendering: pixelated; /* pixelated style */
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  color: var(--color-subtext);
+  font-family: "Courier New", monospace;
+}
+
+@media (max-width: 600px) {
+  .footer-icons {
+    gap: 20px;
+  }
+
+  .footer-icons img {
+    width: 35px;
+    height: 35px;
+  }
+}
