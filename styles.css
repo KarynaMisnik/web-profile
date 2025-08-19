@@ -17,6 +17,18 @@
   --info-text: "Helvetica", sans-serif;
 }
 
+@media (max-width: 900px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1rem;
+  }
+}
+
 body {
   background-color: var(--color-bg);
 }
@@ -88,7 +100,7 @@ body {
   max-width: 500px;
 }
 
-.hero-text h1 {
+.hero-text h2 {
   font-family: "Press Start 2P", sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -130,7 +142,7 @@ body {
   flex: 1;
 }
 
-.about-text h1 {
+.about-text h2 {
   font-size: 6rem;
   color: var(--color-text);
   margin: 0;
