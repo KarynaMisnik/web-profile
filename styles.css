@@ -17,18 +17,6 @@
   --info-text: "Helvetica", sans-serif;
 }
 
-@media (max-width: 900px) {
-  h2 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 600px) {
-  h2 {
-    font-size: 1rem;
-  }
-}
-
 body {
   background-color: var(--color-bg);
 }
@@ -177,13 +165,19 @@ body {
     text-align: center;
   }
 
-  .about-text h1 {
+  .about-text h2 {
     font-size: 4rem;
   }
 
   .about-image img {
     width: 80%;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-text h2 {
+    font-size: 2rem;
   }
 }
 
