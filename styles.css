@@ -238,6 +238,9 @@ body {
     gap: 20px;
     align-items: center;
   }
+  .skills-section h2 {
+    font-size: 2rem;
+  }
 
   .skill {
     flex: 1 1 50%;
@@ -316,7 +319,7 @@ body {
 }
 
 @media (max-width: 900px) {
-  .projects-section h2 {
+  #projects-section h2 {
     font-size: 3rem;
   }
 }
@@ -325,6 +328,9 @@ body {
   .projects-container {
     flex-direction: column;
     gap: 30px;
+  }
+  #projects-section h2 {
+    font-size: 2rem;
   }
 }
 
@@ -384,6 +390,10 @@ body {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+  }
+
+  .interests-section h2 {
+    font-size: 2rem;
   }
 
   .interest {
