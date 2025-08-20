@@ -113,13 +113,13 @@ body {
 
 .hero-button:hover {
   background: var(--color-accent);
-  color: #0d0d0d; /* dark background when hovered */
+  color: #0d0d0d;
   box-shadow: 0 0 8px var(--color-accent);
 }
 
 @media (max-width: 900px) {
   .hero-container {
-    flex-direction: column; /* stack vertically */
+    flex-direction: column;
     text-align: center;
   }
 
