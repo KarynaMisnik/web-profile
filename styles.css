@@ -50,7 +50,7 @@ body {
 
 /* Hover effect */
 .nav-menu a:hover {
-  color: var(--color-accent); /* neon red */
+  color: var(--color-accent);
   text-shadow: 0 0 8px var(--color-accent);
 }
 
