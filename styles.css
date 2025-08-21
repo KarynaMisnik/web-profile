@@ -65,7 +65,7 @@ body {
 .hero {
   width: 100%;
   padding: 4rem 2rem;
-  background: transparent; /* blends with page */
+  background: transparent;
   color: var(--color-text); /* light gray */
 }
 
