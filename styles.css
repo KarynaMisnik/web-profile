@@ -242,7 +242,7 @@ body {
 }
 
 .skill {
-  flex: 1 1 100px; /* allows multiple icons to fit in a row */
+  flex: 1 1 100px;
   max-width: 100px;
   text-align: center;
 }
