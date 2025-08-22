@@ -174,7 +174,7 @@ body {
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-family: "Press Start 2P", monospace; /* pixelated font style */
+  font-family: "Press Start 2P", monospace;
 }
 
 .about-text p {
