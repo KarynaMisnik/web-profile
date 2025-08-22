@@ -92,7 +92,7 @@ body {
   font-family: "Press Start 2P", sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--color-text); /* neon red for name */
+  color: var(--color-text);
 }
 
 .hero-text p {
