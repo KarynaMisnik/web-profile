@@ -395,7 +395,7 @@ body {
 }
 
 .interest {
-  flex: 1 1 150px; /* allows 4–5 items to fit horizontally */
+  flex: 1 1 150px;
   max-width: 150px;
   text-align: center;
 }
