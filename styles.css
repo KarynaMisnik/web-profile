@@ -341,7 +341,7 @@ body {
 .project-tag {
   display: inline-block;
   padding: 4px 10px;
-  background-color: #1a1a1a; /* slightly lighter than main div bg */
+  background-color: #1a1a1a;
   color: var(--color-text);
   font-family: var(--info-text);
   font-size: 1rem;
