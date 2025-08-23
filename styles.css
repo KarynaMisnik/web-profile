@@ -467,7 +467,7 @@ body {
 .footer-icons img {
   width: 40px;
   height: 40px;
-  image-rendering: pixelated; /* pixelated style */
+  image-rendering: pixelated;
 }
 
 .footer-text {
