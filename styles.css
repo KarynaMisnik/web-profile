@@ -250,8 +250,6 @@ body {
 .skill img {
   width: 100%;
   height: auto;
-  image-rendering: pixelated;
-  transition: transform 0.3s ease;
 }
 
 .skill img:hover {
