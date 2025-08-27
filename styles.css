@@ -252,10 +252,6 @@ body {
   height: auto;
 }
 
-.skill img:hover {
-  transform: scale(1.1);
-}
-
 @media (max-width: 900px) {
   .skills-section h2 {
     font-size: 3rem;
