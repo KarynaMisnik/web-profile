@@ -8,6 +8,7 @@
   --color-bg: #0d0d0d;
   --color-text: #c4c4c4;
   --color-subtext: #8a8a8a;
+  --color-bg-subtitle: #1a1a1a;
   --color-accent: #ff1a1a;
   --color-border: #b00000;
 
@@ -335,7 +336,7 @@ body {
 .project-tag {
   display: inline-block;
   padding: 4px 10px;
-  background-color: #1a1a1a;
+  background-color: var(--color-bg-subtitle);
   color: var(--color-text);
   font-family: var(--info-text);
   font-size: 1rem;
@@ -409,7 +410,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--color-bg-subtitle);
   color: #fff;
   font-size: 0.9rem;
   font-family: var(--info-text);
