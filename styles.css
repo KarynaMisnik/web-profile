@@ -390,32 +390,34 @@ body {
 
 .interest {
   position: relative;
+  width: 150px; /* or your desired fixed width */
+  /* REMOVE: height: 150px; */
+  overflow: visible; /* ensure caption is not clipped */
+  text-align: center; /* center content */
+}
+
+.interest img {
+  position: relative;
   width: 150px; /* fixed width for uniform size */
   height: 150px; /* fixed height for uniform size */
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
-}
-
-.interest img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* ensures full image without cutting */
   image-rendering: pixelated;
-  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
 }
 
 .caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  display: block;
   width: 100%;
   background: var(--color-bg-subtitle);
   color: #fff;
   font-size: 0.9rem;
   font-family: var(--info-text);
   padding: 5px;
-  opacity: 1;
+  text-align: center;
+  margin-top: 5px;
 }
 
 /* Responsive */
