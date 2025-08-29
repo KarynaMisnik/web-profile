@@ -409,6 +409,7 @@ body {
   display: block;
   background: var(--color-bg-subtitle);
   color: var(--color-text);
+  border-radius: 8px;
   font-size: 0.9rem;
   font-family: var(--info-text);
   padding: 5px;
