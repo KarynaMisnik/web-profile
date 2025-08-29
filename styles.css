@@ -383,36 +383,32 @@ body {
 
 .interests-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .interest {
-  position: relative;
-  width: 150px; /* or your desired fixed width */
-  /* REMOVE: height: 150px; */
-  overflow: visible; /* ensure caption is not clipped */
-  text-align: center; /* center content */
+  width: 150px; /* fixed width for each item */
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .interest img {
-  position: relative;
-  width: 150px; /* fixed width for uniform size */
-  height: 150px; /* fixed height for uniform size */
-  overflow: hidden;
+  width: 150px;
+  height: 150px; /* all images same height */
+  object-fit: contain; /* preserves image proportions inside the box */
   border-radius: 10px;
-  cursor: pointer;
-  image-rendering: pixelated;
   display: block;
   margin: 0 auto;
+  image-rendering: pixelated;
+  background: var(--color-bg); /* fills empty areas if aspect ratio differs */
 }
 
 .caption {
   display: block;
-  width: 100%;
   background: var(--color-bg-subtitle);
-  color: #fff;
+  color: var(--color-text);
   font-size: 0.9rem;
   font-family: var(--info-text);
   padding: 5px;
@@ -432,12 +428,13 @@ body {
     font-size: 2rem;
   }
   .interest {
-    width: 120px;
-    height: 120px;
+    width: 45%;
   }
 
-  .caption {
-    font-size: 0.8rem;
+  .interest img {
+    width: 100%;
+    height: auto; /* scale proportionally on very small screens */
+    max-height: 120px;
   }
 }
 
