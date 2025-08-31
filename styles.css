@@ -75,8 +75,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 4rem;
 }
 
 .hero-image {
@@ -108,22 +109,6 @@ body {
     flex-direction: column;
     text-align: center;
   }
-}
-
-/*
-.hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 4rem;
-}
-
-.hero-image img {
-  width: 220px;
-  height: auto;
-  border-radius: 12px;
 }
 
 .hero-text {
@@ -195,7 +180,6 @@ body {
     padding: 10px 20px;
   }
 }
-*/
 
 /* About Section */
 .about-section {
