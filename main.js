@@ -12,3 +12,34 @@ switchEl.addEventListener("click", () => {
 });
 
 /* Skills Section */
+const skills = [
+  "> Skills:",
+  "  - HTML",
+  "  - CSS",
+  "  - JavaScript",
+  "  - React",
+  "  - Node.js",
+  "  - MongoDB",
+  "  - Git",
+];
+
+const output = document.getElementById("skills-output");
+let line = 0;
+let char = 0;
+
+function typeSkill() {
+  if (line < skills.length) {
+    if (char < skills[line].length) {
+      output.textContent += skills[line][char];
+      char++;
+      setTimeout(typeSkill, 40); // typing speed (ms per character)
+    } else {
+      output.textContent += "\n";
+      line++;
+      char = 0;
+      setTimeout(typeSkill, 150); // pause between lines
+    }
+  }
+}
+
+typeSkill();
