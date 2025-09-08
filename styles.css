@@ -301,7 +301,8 @@ body {
 */
 
 .skills-terminal {
-  max-width: 600px;
+  width: 90%; /* fluid width */
+  max-width: 600px; /* limit for desktop */
   margin: 4rem auto;
   background: #0d0d0d;
   border: 2px solid #ff1a1a;
@@ -309,6 +310,7 @@ body {
   font-family: "Press Start 2P", monospace;
   color: #c4c4c4;
   box-shadow: 0 0 12px rgba(255, 26, 26, 0.5);
+  overflow-x: auto; /* allow scroll if too narrow */
 }
 
 .terminal-header {
@@ -352,6 +354,17 @@ body {
 #skills-output {
   margin: 0;
   line-height: 1.6;
+}
+
+/* --- Responsive tweaks --- */
+@media (max-width: 480px) {
+  .terminal-body {
+    font-size: 0.7rem; /* slightly smaller for mobile */
+  }
+  .terminal-header .dot {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 /* Projects Section */
