@@ -18,8 +18,7 @@ const skills = [
   "  - CSS",
   "  - JavaScript",
   "  - React",
-  "  - Node.js",
-  "  - MongoDB",
+  "  - SQL",
   "  - Git",
 ];
 
