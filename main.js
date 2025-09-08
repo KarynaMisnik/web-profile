@@ -10,3 +10,5 @@ switchEl.addEventListener("click", () => {
     ? "./images/portfolio-pic-colored.png"
     : "./images/portfolio-pic.png";
 });
+
+/* Skills Section */

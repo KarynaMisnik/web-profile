@@ -238,7 +238,7 @@ body {
   }
 }
 
-/* Skills Section */
+/* Skills Section 
 .skills-section {
   background-color: var(--color-bg);
   padding: 60px 20px;
@@ -297,6 +297,61 @@ body {
     flex: 1 1 50%;
     max-width: 200px;
   }
+}
+*/
+
+.skills-terminal {
+  max-width: 600px;
+  margin: 4rem auto;
+  background: #0d0d0d;
+  border: 2px solid #ff1a1a;
+  border-radius: 8px;
+  font-family: "Press Start 2P", monospace;
+  color: #c4c4c4;
+  box-shadow: 0 0 12px rgba(255, 26, 26, 0.5);
+}
+
+.terminal-header {
+  background: #1a1a1a;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 2px solid #ff1a1a;
+}
+
+.terminal-header .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.terminal-header .red {
+  background: #ff1a1a;
+}
+.terminal-header .yellow {
+  background: #ffd700;
+}
+.terminal-header .green {
+  background: #00ff00;
+}
+
+.terminal-title {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: #8a8a8a;
+}
+
+.terminal-body {
+  padding: 1rem;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+}
+
+#skills-output {
+  margin: 0;
+  line-height: 1.6;
 }
 
 /* Projects Section */
