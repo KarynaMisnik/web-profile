@@ -316,88 +316,91 @@ body {
 }
 
 /* Projects Section */
-#projects-section {
+
+.projects-section {
   background-color: var(--color-bg);
   padding: 60px 20px;
   text-align: center;
   color: var(--color-text);
 }
 
-#projects-section h2 {
+.projects-section h2 {
   font-size: 4rem;
   color: var(--color-text);
   font-family: "Press Start 2P", monospace;
   margin-bottom: 40px;
-  letter-spacing: 2px;
 }
 
 .projects-container {
   display: flex;
-  gap: 40px;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-.project {
-  flex: 1 1 300px;
-  max-width: 400px;
-  border: 3px solid var(--color-border);
-  background-color: var(--color-bg);
-  padding: 20px;
+.project-card {
+  width: 250px;
+  padding: 15px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.project img {
-  width: 100%;
-  height: auto;
+.project-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
   image-rendering: pixelated;
-}
-
-.project-title {
-  margin-top: 15px;
-  font-family: "Press Start 2P", monospace;
-  font-size: 1.2rem;
-  color: var(--color-text);
+  margin-bottom: 10px;
 }
 
 .project-tags {
-  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
   justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 
-.project-tag {
-  display: inline-block;
-  padding: 4px 10px;
+.tag {
   background-color: var(--color-bg-subtitle);
-  color: var(--color-text);
-  font-family: var(--info-text);
-  font-size: 1rem;
-  font-weight: var(--semi-bold-text);
-  border-radius: 4px;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
 }
 
-.project-text {
-  margin-top: 5px;
+.project-description {
+  font-size: 0.9rem;
   color: var(--color-subtext);
-  font-size: 0.95rem;
+  margin-bottom: 10px;
 }
 
+.project-links a img {
+  width: 30px;
+  height: 30px;
+  image-rendering: pixelated;
+  margin: 0 5px;
+}
+
+/* Responsive */
 @media (max-width: 900px) {
-  #projects-section h2 {
+  .projects-section h2 {
     font-size: 3rem;
+  }
+  .project-card {
+    width: 45%;
   }
 }
 
 @media (max-width: 600px) {
-  .projects-container {
-    flex-direction: column;
-    gap: 30px;
-  }
-  #projects-section h2 {
+  .projects-section h2 {
     font-size: 2rem;
+  }
+  .project-card {
+    width: 90%;
   }
 }
 
