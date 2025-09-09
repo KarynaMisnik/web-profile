@@ -500,39 +500,6 @@ body {
   font-size: 0.8rem;
 }
 
-/*
-.footer {
-  background-color: var(--color-bg);
-  padding: 40px 20px;
-  text-align: center;
-  color: var(--color-text);
-}
-
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.footer-icons a {
-  padding: 5px;
-  background-color: var(--color-accent);
-}
-
-.footer-icons img {
-  width: 40px;
-  height: 40px;
-  image-rendering: pixelated;
-}
-
-.footer-text {
-  font-size: 0.85rem;
-  color: var(--color-subtext);
-  font-family: "Courier New", monospace;
-}
-
 @media (max-width: 600px) {
   .footer-icons {
     gap: 20px;
@@ -543,4 +510,3 @@ body {
     height: 35px;
   }
 }
-*/
