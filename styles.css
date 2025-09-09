@@ -477,24 +477,19 @@ body {
 
 /* Footer */
 .footer {
-  background: #0d0d0d; /* your dark background */
   text-align: center;
   padding: 1.5rem 0;
 }
 
 .footer-icons a img {
-  width: 40px; /* adjust as needed */
+  width: 40px;
   margin: 0 1rem;
   transition: filter 0.3s ease;
-  filter: drop-shadow(0 0 6px rgba(255, 26, 26, 0.4)); /* subtle glow */
-}
-
-.footer-icons a:hover img {
-  filter: drop-shadow(0 0 12px rgba(255, 26, 26, 0.8)); /* stronger on hover */
+  filter: drop-shadow(0 0 6px rgba(255, 26, 26, 0.8));
 }
 
 .footer-text {
-  color: #c4c4c4;
+  color: var(--color-text);
   margin-top: 0.5rem;
   font-family: "Press Start 2P", monospace;
   font-size: 0.8rem;
