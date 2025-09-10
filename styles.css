@@ -250,8 +250,8 @@ body {
 /* Skills Section */
 
 .skills-terminal {
-  width: 90%; /* fluid width */
-  max-width: 600px; /* limit for desktop */
+  width: 90%;
+  max-width: 600px;
   margin: 4rem auto;
   background: #0d0d0d;
   border: 2px solid #ff1a1a;
@@ -259,7 +259,7 @@ body {
   font-family: "Press Start 2P", monospace;
   color: #c4c4c4;
   box-shadow: 0 0 12px rgba(255, 26, 26, 0.5);
-  overflow-x: auto; /* allow scroll if too narrow */
+  overflow-x: auto;
 }
 
 .terminal-header {
@@ -366,15 +366,16 @@ body {
 .tag {
   background-color: var(--color-bg-subtitle);
   color: #fff;
-  font-size: 0.8rem;
-  padding: 3px 6px;
+  font-size: 1rem;
+  padding: 5px 7px;
   border-radius: 3px;
-  font-family: "Courier New", monospace;
+  font-weight: var(--semi-bold-text);
+  font-family: var(--info-text);
 }
 
 .project-description {
   font-size: 0.9rem;
-  color: var(--color-subtext);
+  color: var(--color-text);
   margin-bottom: 10px;
 }
 
@@ -383,6 +384,7 @@ body {
   height: 30px;
   image-rendering: pixelated;
   margin: 0 5px;
+  color: var(--color-accent);
 }
 
 /* Responsive */
