@@ -125,7 +125,7 @@ body {
 }
 
 .hero-text h2 {
-  font-family: "Press Start 2P", sans-serif;
+  font-family: var(--primary-font);
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--color-text);
@@ -143,7 +143,7 @@ body {
   border: 2px solid var(--color-accent);
   color: var(--color-accent);
   text-decoration: none;
-  font-family: "Press Start 2P", sans-serif;
+  font-family: var(--primary-font);
 }
 
 @media (max-width: 900px) {
@@ -203,7 +203,7 @@ body {
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-family: "Press Start 2P", monospace;
+  font-family: var(--primary-font);
 }
 
 .about-text p {
@@ -327,7 +327,7 @@ body {
 .projects-section h2 {
   font-size: 4rem;
   color: var(--color-text);
-  font-family: "Press Start 2P", monospace;
+  font-family: var(--primary-font);
   margin-bottom: 40px;
 }
 
@@ -496,7 +496,7 @@ body {
 .footer-text {
   color: var(--color-text);
   margin-top: 0.5rem;
-  font-family: "Press Start 2P", monospace;
+  font-family: var(--primary-font);
   font-size: 0.8rem;
 }
 
