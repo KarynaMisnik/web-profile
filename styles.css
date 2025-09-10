@@ -500,6 +500,24 @@ body {
   font-size: 0.8rem;
 }
 
+.footer-nav a {
+  margin: 5px 0;
+}
+
+.footer-nav {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 @media (max-width: 600px) {
   .footer-icons {
     gap: 20px;
