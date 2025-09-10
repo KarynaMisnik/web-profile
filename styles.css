@@ -495,7 +495,7 @@ body {
 
 .footer-text {
   color: var(--color-text);
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
   font-family: var(--primary-font);
   font-size: 0.8rem;
 }
