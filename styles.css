@@ -515,7 +515,6 @@ body {
 .footer-nav a {
   color: var(--color-text);
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 @media (max-width: 600px) {
