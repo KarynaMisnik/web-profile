@@ -47,11 +47,32 @@ body {
   margin: 0;
   padding: 0;
   display: inline-flex;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 
 /* Links */
-.nav-menu a {
+.nav-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* hide text */
+  .text {
+    display: none;
+  }
+
+  /* show icons */
+  .nav-icon {
+    display: inline-block;
+    font-size: 1.4rem;
+  }
+
+  .nav-menu a {
+    padding: 0.5rem;
+  }
+}
+
+.nav-menu li a {
   color: var(--color-text);
   text-decoration: none;
   font-family: var(--primary-font);
@@ -62,7 +83,7 @@ body {
 }
 
 /* Hover effect */
-.nav-menu a:hover {
+.nav-menu li a:hover {
   color: var(--color-accent);
   text-shadow: 0 0 8px var(--color-accent);
 }
