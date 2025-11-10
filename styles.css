@@ -56,7 +56,9 @@ body {
   text-decoration: none;
   font-family: var(--primary-font);
   font-size: 0.9rem;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
 }
 
 /* Hover effect */
@@ -379,12 +381,11 @@ body {
   margin-bottom: 10px;
 }
 
-.project-links a img {
-  width: 30px;
-  height: 30px;
-  image-rendering: pixelated;
-  margin: 0 5px;
+.link {
+  margin: 0 0.5rem;
   color: var(--color-accent);
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 /* Responsive */
@@ -493,15 +494,15 @@ body {
   filter: drop-shadow(0 0 6px rgba(255, 26, 26, 0.8));
 }
 
-.footer-text {
+#year {
   color: var(--color-text);
-  margin-top: 0.7rem;
+
   font-family: var(--primary-font);
   font-size: 0.8rem;
 }
 
 .footer-nav a {
-  margin: 5px 0;
+  margin: 0.5rem 0;
 }
 
 .footer-nav {
