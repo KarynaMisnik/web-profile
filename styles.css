@@ -13,6 +13,28 @@ a {
   box-sizing: border-box;
 }
 
+h2 {
+  font-size: 5rem;
+}
+
+@media (max-width: 900px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 :root {
   --color-bg: #0d0d0d;
   --color-text: #c4c4c4;
@@ -153,7 +175,7 @@ body {
 
 .hero-text h2 {
   font-family: var(--primary-font);
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   color: var(--color-text);
 }
@@ -183,10 +205,6 @@ body {
     text-align: center;
   }
 
-  .hero-text h2 {
-    font-size: 3rem;
-  }
-
   .hero-text p {
     font-size: 1rem;
   }
@@ -197,10 +215,6 @@ body {
 }
 
 @media (max-width: 600px) {
-  .hero-text h2 {
-    font-size: 2rem;
-  }
-
   .hero-text p {
     font-size: 0.95rem;
   }
@@ -214,17 +228,17 @@ body {
 .about-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 60px;
   gap: 40px;
 }
 
 .about-text {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-text h2 {
-  font-size: 6rem;
   color: var(--color-text);
   margin: 0;
   line-height: 1;
@@ -241,36 +255,10 @@ body {
   line-height: 1.6;
 }
 
-.about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.about-image img {
-  max-width: 100%;
-  height: auto;
-}
-
 @media (max-width: 900px) {
   .about-section {
     flex-direction: column;
     text-align: center;
-  }
-
-  .about-text h2 {
-    font-size: 4rem;
-  }
-
-  .about-image img {
-    width: 80%;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about-text h2 {
-    font-size: 2rem;
   }
 }
 
@@ -352,7 +340,6 @@ body {
 }
 
 .projects-section h2 {
-  font-size: 4rem;
   color: var(--color-text);
   font-family: var(--primary-font);
   margin-bottom: 40px;
@@ -415,18 +402,12 @@ body {
 
 /* Responsive */
 @media (max-width: 900px) {
-  .projects-section h2 {
-    font-size: 3rem;
-  }
   .project-card {
     width: 45%;
   }
 }
 
 @media (max-width: 600px) {
-  .projects-section h2 {
-    font-size: 2rem;
-  }
   .project-card {
     width: 90%;
   }
@@ -441,7 +422,6 @@ body {
 }
 
 .interests-section h2 {
-  font-size: 4rem;
   color: var(--color-text);
   font-family: var(--primary-font);
   margin-bottom: 40px;
@@ -485,16 +465,8 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 900px) {
-  .interests-section h2 {
-    font-size: 3rem;
-  }
-}
 
 @media (max-width: 600px) {
-  .interests-section h2 {
-    font-size: 2rem;
-  }
   .interest {
     width: 45%;
   }
