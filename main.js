@@ -13,13 +13,12 @@ switchEl.addEventListener("click", () => {
 
 /* Skills Section */
 const skills = [
-  "> Skills:",
-  "  - HTML",
-  "  - CSS",
-  "  - JavaScript",
-  "  - React",
-  "  - SQL",
-  "  - Git",
+  "karyna@portfolio:~$ skills",
+  "html css javascript",
+  "react vite mui",
+  "sql java(basic) c(basic)",
+  "git github agile",
+  "",
 ];
 
 const output = document.getElementById("skills-output");
