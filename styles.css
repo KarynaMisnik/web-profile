@@ -484,11 +484,11 @@ body {
   padding: 1.5rem 0;
 }
 
-.footer-icons a img {
-  width: 40px;
-  margin: 0 1rem;
-  transition: filter 0.3s ease;
-  filter: drop-shadow(0 0 6px rgba(255, 26, 26, 0.8));
+.footer-icons i {
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  margin: 0 0.5rem;
+  font-size: 2rem;
 }
 
 #year {
@@ -518,10 +518,5 @@ body {
 @media (max-width: 600px) {
   .footer-icons {
     gap: 20px;
-  }
-
-  .footer-icons img {
-    width: 35px;
-    height: 35px;
   }
 }
