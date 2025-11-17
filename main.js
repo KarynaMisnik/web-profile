@@ -17,7 +17,7 @@ const skills = [
   "html css javascript",
   "react vite mui",
   "sql java(basic) c(basic)",
-  "git github agile",
+  "git github figma agile",
   "",
 ];
 
