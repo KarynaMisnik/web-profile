@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--- Google Fonts --->
+    <!--- Press Start 2P --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!--- Inter --->
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tender Project</title>
+</head>
+<body>
+    <a class="btn btn-back-home">Back</a>
+    <main class="project-page">
+    
+        <!-- HERO / INTRO -->
+        <header class="project-hero">
+            <h2>E-Tendering System</h2>
+            <p class="project-subtitle">
+                Team project · Web application
+            </p>
+        </header>
+    
+        <!-- OVERVIEW -->
+        <section class="project-overview">
+            <h2>Overview</h2>
+            <p>
+                Short explanation of what the project is, what problem it solves,
+                and the context (course / internship / team project).
+            </p>
+        </section>
+    
+        <!-- YOUR ROLE -->
+        <section class="project-role">
+            <h2>My Role</h2>
+            <ul>
+
+                <li><i class='fab fa-figma' style='font-size:48px;color:var(--color-accent)'></i>
+ UI/UX design (Figma mockups)</li>
+                <li><i class='far fa-file-code' style='font-size:48px;color:var(--color-accent)'></i>
+Frontend development</li>
+                <li><i class='far fa-file' style='font-size:48px;color:var(--color-accent)'></i>
+Documentation & technical writing</li>
+            </ul>
+        </section>
+    
+        <!-- TECH STACK -->
+        <section class="project-stack">
+            <h2>Tech Stack</h2>
+        <div class="project-tags">
+        <span class="tag">java</span>
+        <span class="tag">maven</span>
+        <span class="tag">servlet</span>
+        <span class="tag">js</span>
+        <span class="tag">html</span>
+        <span class="tag">css</span>
+        </div>
+        </section>
+    
+        <!-- GALLERY -->
+        <section class="project-gallery">
+            <h2>Screenshots</h2>
+    
+            <figure>
+                <img src="/images/tendering-project/dashboard.png" alt="Main view of the application"  loading="lazy" >
+                <figcaption>Main application view</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="/images/tendering-project/login-form.png" alt="Login form view"  loading="lazy"
+                  >
+                <figcaption>Login form view</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/tendering-project/tender-edit.png" alt="Tender editing view" loading="lazy">
+                <figcaption>Tender editing view</figcaption>
+            </figure>
+        </section>
+    
+        <!-- DEMO VIDEO -->
+        <section class="project-demo">
+            <h2>Demo Video</h2>
+    
+            <video controls poster="video-poster.jpg">
+                <source src="demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    
+        <!-- PROCESS / LEARNINGS -->
+        <section class="project-learnings">
+            <h2>What I Learned</h2>
+            <ul>
+                <li>Translating design mockups into reusable components</li>
+                <li>Collaborating in an Agile team environment</li>
+                <li>Writing clear technical documentation</li>
+            </ul>
+        </section>
+    
+    </main>
+
+    
+</body>
+</html>
+
+<style>
+  body{
+    color: var(--color-text);
+  }
+p{
+    
+     margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--color-subtext);
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+h2{
+    margin: 1.5rem 0;
+}
+
+.btn-back-home {
+ display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  text-decoration: none;
+  font-family: var(--primary-font);
+  margin: 1.5rem;
+ 
+}   
+
+.project-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+
+</style>

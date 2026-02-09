@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-bg: #0d0d0d;
+  --color-text: #c4c4c4;
+  --color-subtext: #8a8a8a;
+  --color-bg-subtitle: #2a2a2a;
+  --color-accent: #ff1a1a;
+  --color-border: #b00000;
+
+  /*~ fonts ~*/
+
+  --primary-font: "Press Start 2P", sans-serif;
+  --info-text: "Inter", sans-serif;
+  --semi-bold-text: 600;
+}
+
+li {
+  list-style: none;
+}
+
 a {
   all: unset;
   color: inherit;
@@ -15,6 +34,11 @@ a {
 
 h2 {
   font-size: 5rem;
+}
+
+h2 {
+  font-family: var(--primary-font);
+  color: var(--color-text);
 }
 
 @media (max-width: 900px) {
@@ -39,21 +63,6 @@ h2 {
   h2 {
     font-size: 2rem;
   }
-}
-
-:root {
-  --color-bg: #0d0d0d;
-  --color-text: #c4c4c4;
-  --color-subtext: #8a8a8a;
-  --color-bg-subtitle: #2a2a2a;
-  --color-accent: #ff1a1a;
-  --color-border: #b00000;
-
-  /*~ fonts ~*/
-
-  --primary-font: "Press Start 2P", sans-serif;
-  --info-text: "Inter", sans-serif;
-  --semi-bold-text: 600;
 }
 
 body {
@@ -180,10 +189,8 @@ body {
 }
 
 .hero-text h2 {
-  font-family: var(--primary-font);
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: var(--color-text);
 }
 
 .hero-text p {
