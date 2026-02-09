@@ -43,13 +43,12 @@
         <!-- YOUR ROLE -->
         <section class="project-role">
             <h2>My Role</h2>
-            <ul>
-
-                <li><i class='fab fa-figma' style='font-size:48px;color:var(--color-accent)'></i>
+            <ul class="project3-stack">
+                <li class="project3-item item1"><i class='fab fa-figma' style='font-size:48px;color:var(--color-accent)'></i>
  UI/UX design (Figma mockups)</li>
-                <li><i class='far fa-file-code' style='font-size:48px;color:var(--color-accent)'></i>
+                <li class="project3-item item2"><i class='far fa-file-code' style='font-size:48px;color:var(--color-accent)'></i>
 Frontend development</li>
-                <li><i class='far fa-file' style='font-size:48px;color:var(--color-accent)'></i>
+                <li class="project3-item item3"><i class='far fa-file' style='font-size:48px;color:var(--color-accent)'></i>
 Documentation & technical writing</li>
             </ul>
         </section>
@@ -72,17 +71,32 @@ Documentation & technical writing</li>
             <h2>Screenshots</h2>
     
             <figure>
-                <img src="/images/tendering-project/dashboard.png" alt="Main view of the application"  loading="lazy" >
+                <img src="/images/tendering-project/dashboard-1200.webp" alt="Main view of the application"  loading="lazy" srcset="
+    /images/tendering-project/dashboard-600.webp 600w,
+    /images/tendering-project/dashboard-900.webp 900w,
+    /images/tendering-project/dashboard-1200.webp 1200w
+  "
+  sizes="(max-width: 768px) 100vw, 1200px">
                 <figcaption>Main application view</figcaption>
             </figure>
     
             <figure>
-                <img src="/images/tendering-project/login-form.png" alt="Login form view"  loading="lazy"
-                  >
+                <img src="/images/tendering-project/login-form-1200.webp" alt="Login form view"  loading="lazy"
+                   srcset="
+    /images/tendering-project/login-form-600.webp 600w,
+    /images/tendering-project/login-form-900.webp 900w,
+    /images/tendering-project/login-form-1200.webp 1200w
+  "
+  sizes="(max-width: 768px) 100vw, 1200px">
                 <figcaption>Login form view</figcaption>
             </figure>
             <figure>
-                <img src="/images/tendering-project/tender-edit.png" alt="Tender editing view" loading="lazy">
+                <img src="/images/tendering-project/tender-edit-1200.webp" alt="Tender editing view" loading="lazy"  srcset="
+    /images/tendering-project/tender-edit-600.webp 600w,
+    /images/tendering-project/tender-edit-900.webp 900w,
+    /images/tendering-project/tender-edit-1200.webp 1200w
+  "
+  sizes="(max-width: 768px) 100vw, 1200px" >
                 <figcaption>Tender editing view</figcaption>
             </figure>
         </section>
@@ -91,7 +105,7 @@ Documentation & technical writing</li>
         <section class="project-demo">
             <h2>Demo Video</h2>
     
-            <video controls poster="video-poster.jpg">
+            <video autoplay muted loop playsinline poster="/images/tendering-project/video-poster.png">
                 <source src="/video/project3.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -147,12 +161,42 @@ h2{
     align-items: center;
 }
 
+.project3-stack li{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.project3-item i {
+  margin-right: 0.75rem;
+}
+
+figure {
+ max-width: 1200px;
+  margin: 2rem ;
+}
+
 figure img {
   width: 100%;
-  max-width: 1200px;
-  height: auto;
+   height: auto;
+  max-width: 100%;
   display: block;
   border-radius: 8px;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-subtext);
+}
+
+.project-demo video {
+  width: 100%;      
+  max-width: 1280px; 
+  height: auto;     
+  display: block;   
+  border-radius: 8px; 
 }
 
 
