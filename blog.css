@@ -1,3 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #0d0d0d;
+  --color-text: #c4c4c4;
+  --color-subtext: #8a8a8a;
+  --color-bg-subtitle: #2a2a2a;
+  --color-accent: #ff1a1a;
+  --color-border: #b00000;
+
+  /*~ fonts ~*/
+
+  --primary-font: "Press Start 2P", sans-serif;
+  --info-text: "Inter", sans-serif;
+  --semi-bold-text: 600;
+}
+
 body {
   color: var(--color-text);
+}
+
+.blog-title {
+  margin: 1rem 0;
+}
+
+.meta {
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+.excerpt {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.85;
+}
+
+#articles {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.article-card {
+  background: #111; /* dark card */
+  border: 1px solid #222; /* subtle border */
+  border-radius: 14px;
+  padding: 18px 20px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.article-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+}
+
+.article-card p {
+  margin: 6px 0;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.article-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4da3ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.article-card a:hover {
+  text-decoration: underline;
 }
