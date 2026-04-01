@@ -30,12 +30,14 @@ body {
 .meta {
   opacity: 0.6;
   font-size: 0.9rem;
+  color: var(--color-accent);
 }
 
 .excerpt {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   opacity: 0.85;
+  text-align: justify;
 }
 
 #articles {
@@ -51,6 +53,7 @@ body {
   border: 1px solid #222; /* subtle border */
   border-radius: 14px;
   padding: 18px 20px;
+  margin-bottom: 1rem;
 
   transition:
     transform 0.2s ease,
@@ -71,12 +74,13 @@ body {
   margin: 6px 0;
   line-height: 1.5;
   opacity: 0.85;
+  font-family: var(--info-text);
 }
 
 .article-card a {
   display: inline-block;
   margin-top: 10px;
-  color: #4da3ff;
+  color: var(--color-accent);
   text-decoration: none;
   font-weight: 500;
 }
