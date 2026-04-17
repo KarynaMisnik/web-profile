@@ -199,7 +199,9 @@ body {
   margin-bottom: 2rem;
 }
 
-.hero-button {
+.hero-button,
+.blog-button,
+.github-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border: 2px solid var(--color-accent);
@@ -284,6 +286,17 @@ body {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.logs-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-button,
+.github-button {
+  margin-bottom: 1rem;
 }
 
 /* Skills Section */
