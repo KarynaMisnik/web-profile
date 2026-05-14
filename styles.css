@@ -297,6 +297,7 @@ body {
 .blog-button,
 .github-button {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* Skills Section */
