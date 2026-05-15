@@ -164,6 +164,7 @@ body {
   image-rendering: pixelated;
   display: block;
   max-width: 250px;
+  filter: drop-shadow(0 0 20px rgba(255, 254, 254, 0.373));
 }
 
 .switch {
@@ -410,6 +411,7 @@ body {
   object-fit: contain;
   image-rendering: pixelated;
   margin-bottom: 10px;
+  filter: drop-shadow(0 0 20px rgba(250, 250, 250, 0.39));
 }
 
 .project-tags {
