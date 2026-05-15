@@ -294,10 +294,15 @@ body {
   justify-content: center;
 }
 
+.btn-container {
+  display: flex;
+  margin-top: 1rem;
+}
+
 .blog-button,
 .github-button {
-  margin-bottom: 1rem;
   text-align: center;
+  margin-right: 1rem;
 }
 
 /* Skills Section */
