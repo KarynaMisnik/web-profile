@@ -300,6 +300,13 @@ body {
   margin-top: 1rem;
 }
 
+@media (max-width: 900px) {
+  .blog-button,
+  .github-button {
+    line-height: 1.2rem;
+  }
+}
+
 .blog-button,
 .github-button {
   text-align: center;
